@@ -38,10 +38,10 @@ html{
 
 section{
     /* Gap size underneath each section */
-    margin-bottom: calc((150 /16 * 1rem) + ((400 - 150) * ((100vw - 320px) / (1920 - 320))));
+    margin-bottom: calc((150 /16 * 1rem) + ((340 - 150) * ((100vw - 320px) / (1920 - 320))));
 
     /* Overall side gutter size */
-    padding-inline: calc((20 /16 * 1rem) + ((120 - 20) * ((100vw - 320px) / (1920 - 320))));
+    padding: 0 calc((20 /16 * 1rem) + ((130 - 20) * ((100vw - 320px) / (1920 - 320))));
 }
 
 
@@ -59,50 +59,62 @@ img{
 button, .a-button{
     display: block;
     width: max-content;
+    height: min-content;
 
     /* Padding Sizes */
-    padding-inline: calc((20 /16 * 1rem) + ((30 - 20) * ((100vw - 320px) / (1920 - 320))));
-    padding-block: calc((8 /16 * 1rem) + ((12 - 8) * ((100vw - 320px) / (1920 - 320))));/* 
-    
-    /* Font Size */
-    /* font-size: calc((min /16 * 1rem) + ((max - min) * ((100vw - 320px) / (1920 - 320)))); */
+    padding: calc((20 /16 * 1rem) + ((26 - 20) * ((100vw - 320px) / (1920 - 320))));
+    border-radius: calc((2 /16 * 1rem) + ((6 - 2) * ((100vw - 320px) / (1920 - 320))));
+
+    font-family: lemonMilk-light;
+    font-weight: 100;
+    font-size: calc((20 /16 * 1rem) + ((30 - 20) * ((100vw - 320px) / (1920 - 320))));
+
+    color: var(--c-light);
+
+    border-style: solid;
+    border-width: calc((1 /16 * 1rem) + ((2 - 1) * ((100vw - 320px) / (1920 - 320))));
 }
 
 /* Custom Button Stylings */
+.--b-1{
+    color:var(--c-dark)
+
+}
 
 /* ------------------GLOBAL TYPOGRAPGY------------------ */
-
 
 /* Default text Styling */
 
 h1, h2, h3{
-    
+    font-family: lemonMilk-medium;
 }
 
 
 h1{
     
     /* Font Size */
-    font-size: calc((30 /16 * 1rem) + ((65 - 30) * ((100vw - 320px) / (1920 - 320))));
+    font-size: calc((30 /16 * 1rem) + ((150 - 30) * ((100vw - 320px) / (1920 - 320))));
 }
 
 h2{
-    font-weight: 400;
-
+    font-family: lemonMilk-light;
+    font-weight: 100;
     /* Font Size */
-    font-size: calc((20 /16 * 1rem) + ((50 - 20) * ((100vw - 320px) / (1920 - 320))));
+    font-size: calc((20 /16 * 1rem) + ((110 - 20) * ((100vw - 320px) / (1920 - 320))));
 }
 
 h3{
     /* Font Size */
-    font-size: calc((34 /16 * 1rem) + ((58 - 34) * ((100vw - 320px) / (1920 - 320))));
+    font-size: calc((34 /16 * 1rem) + ((30 - 34) * ((100vw - 320px) / (1920 - 320))));
 }
 
-p, .a-button, li{
+p{
+    font-family: openSans;
+}
 
-
+p, li{
     /* Font Size */
-    font-size: calc((15 /16 * 1rem) + ((26 - 15) * ((100vw - 320px) / (1920 - 320))));
+    font-size: calc((15 /16 * 1rem) + ((28 - 15) * ((100vw - 320px) / (1920 - 320))));
 }
 
 ul{
@@ -112,23 +124,41 @@ ul{
 
 
 @font-face {
-    font-family: comfortaa;
-    src: url(./Assets/Comfortaa-VariableFont_wght.ttf);
+    font-family: lemonMilk-bold;
+    src: url(../Assets/LEMONMILK-Bold.otf);
 }
+
 @font-face {
-    font-family: amatic;
-    src: url(./Assets/AmaticSC-Regular.ttf);
+    font-family: lemonMilk-medium;
+    src: url(../Assets/LEMONMILK-Medium.otf);
 }
+
 @font-face {
-    font-family: amaticBold;
-    src: url(./Assets/AmaticSC-Bold.ttf);
+    font-family: lemonMilk-regular;
+    src: url(../Assets/LEMONMILK-Regular.otf);
 }
+
+@font-face {
+    font-family: lemonMilk-light;
+    src: url(../Assets/LEMONMILK-Light.otf);
+}
+
+@font-face {
+    font-family: sourceCode;
+    src: url(../Assets/SourceCodePro-VariableFont_wght.ttf);
+}
+
 @font-face {
     font-family: openSans;
-    src: url(./Assets/OpenSans-VariableFont_wdth\,wght.ttf);
+    src: url(../Assets/OpenSans-VariableFont_wdth\,wght.ttf);
 }
 
 /* Custom text Styling */
+
+
+.--t-sub{
+    font-size: 0.25em;
+}
 
 
 
@@ -175,4 +205,21 @@ ul{
     display: grid;
     gap: calc((30 /16 * 1rem) + ((160 - 30) * ((100vw - 320px) / (1920 - 320))));
     grid-template-columns: 1fr 1fr;
+}
+
+
+
+
+.ctaCard{
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.ctaCard-heading{
+    font-family: sourceCode;
+    font-size: calc((20 /16 * 1rem) + ((150 - 20) * ((100vw - 320px) / (1920 - 320))));
+    font-weight: 900;
+
+    line-height: calc((100 /16 * 1rem) + ((150 - 100) * ((100vw - 320px) / (1920 - 320))));
 }
