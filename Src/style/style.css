@@ -1,0 +1,178 @@
+/*************************************************************************/
+/*************************** GLOBAL STYLING ******************************/
+/*************************************************************************/
+
+
+
+/* ------------------GLOBAL MAIN STYLING ------------------ */
+
+
+:root{
+    /* Main Colors */
+    --c-dark: #2c3033;
+    --c-light: #fefaf9;
+    --c-accent: #e8d181;
+}
+
+
+*{
+	/* Removes certain default style */
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+    background: none;
+	border: none;
+
+	/* Replaces certain default style */
+	box-sizing: border-box;
+}
+
+body{
+    background-color: var(--c-dark);
+}
+
+html{
+    color: var(--c-light);
+}
+
+
+section{
+    /* Gap size underneath each section */
+    margin-bottom: calc((150 /16 * 1rem) + ((400 - 150) * ((100vw - 320px) / (1920 - 320))));
+
+    /* Overall side gutter size */
+    padding-inline: calc((20 /16 * 1rem) + ((120 - 20) * ((100vw - 320px) / (1920 - 320))));
+}
+
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+
+/* ------------------GLOBAL BUTTONS------------------ */
+
+
+/* Default Button Styling */
+
+button, .a-button{
+    display: block;
+    width: max-content;
+
+    /* Padding Sizes */
+    padding-inline: calc((20 /16 * 1rem) + ((30 - 20) * ((100vw - 320px) / (1920 - 320))));
+    padding-block: calc((8 /16 * 1rem) + ((12 - 8) * ((100vw - 320px) / (1920 - 320))));/* 
+    
+    /* Font Size */
+    /* font-size: calc((min /16 * 1rem) + ((max - min) * ((100vw - 320px) / (1920 - 320)))); */
+}
+
+/* Custom Button Stylings */
+
+/* ------------------GLOBAL TYPOGRAPGY------------------ */
+
+
+/* Default text Styling */
+
+h1, h2, h3{
+    
+}
+
+
+h1{
+    
+    /* Font Size */
+    font-size: calc((30 /16 * 1rem) + ((65 - 30) * ((100vw - 320px) / (1920 - 320))));
+}
+
+h2{
+    font-weight: 400;
+
+    /* Font Size */
+    font-size: calc((20 /16 * 1rem) + ((50 - 20) * ((100vw - 320px) / (1920 - 320))));
+}
+
+h3{
+    /* Font Size */
+    font-size: calc((34 /16 * 1rem) + ((58 - 34) * ((100vw - 320px) / (1920 - 320))));
+}
+
+p, .a-button, li{
+
+
+    /* Font Size */
+    font-size: calc((15 /16 * 1rem) + ((26 - 15) * ((100vw - 320px) / (1920 - 320))));
+}
+
+ul{
+    list-style: none;
+}
+
+
+
+@font-face {
+    font-family: comfortaa;
+    src: url(./Assets/Comfortaa-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: amatic;
+    src: url(./Assets/AmaticSC-Regular.ttf);
+}
+@font-face {
+    font-family: amaticBold;
+    src: url(./Assets/AmaticSC-Bold.ttf);
+}
+@font-face {
+    font-family: openSans;
+    src: url(./Assets/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+/* Custom text Styling */
+
+
+
+/*************************************************************************/
+/******************************* HEADER **********************************/
+/*************************************************************************/
+
+/*************************************************************************/
+/******************************* FOOTER **********************************/
+/*************************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+/*************************************************************************/
+/*************************** COMMON STYLING ******************************/
+/*************************************************************************/
+
+
+
+
+.--spread > *:not(:last-child){
+    margin-bottom: calc((25 /16 * 1rem) + ((60 - 25) * ((100vw - 320px) / (1920 - 320))));
+}
+
+.--li-spread > *:not(:last-child){
+    margin-bottom: calc((13 /16 * 1rem) + ((25 - 13) * ((100vw - 320px) / (1920 - 320))));
+}
+
+.--split{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.--split2{
+    display: grid;
+    gap: calc((30 /16 * 1rem) + ((160 - 30) * ((100vw - 320px) / (1920 - 320))));
+    grid-template-columns: 1fr 1fr;
+}
