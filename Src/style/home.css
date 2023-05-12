@@ -151,8 +151,12 @@
 
     }
 
-    .why-img{
+    .why-img1, .why-img4{
         width: 80%;
+    }
+
+    .why-img2, .why-img3{
+
     }
 }
 
