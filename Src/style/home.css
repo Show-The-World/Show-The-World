@@ -1,20 +1,28 @@
 .service{
     margin-bottom: 0;
     background-color: var(--c-light);
-
-    grid-template-columns: 1.1fr 1fr;
+    flex-wrap: wrap-reverse;
 }
 .service-p{
+    flex: 1;
+    flex-basis: 431px;
+
     font-size: calc((20 /16 * 1rem) + ((38 - 20) * ((100vw - 320px) / (1920 - 320))));
     color: var(--c-light);
     background-color: var(--c-dark);
     padding: 0 calc((20 /16 * 1rem) + ((100 - 20) * ((100vw - 320px) / (1920 - 320))));
 }
+.service-background{
 
-.service-subContainer{
+}
+
+.service-image{
+    width: calc((240 /16 * 1rem) + ((700 - 240) * ((100vw - 320px) / (1920 - 320))));
     position: relative;
 }
+
 .service-img{
+    position: absolute;
 }
 .service-s1{
     background-color: var(--c-accent);
@@ -43,7 +51,7 @@
     color: var(--c-dark);
     background-color: var(--c-light);
 
-    margin-top: calc((10 /16 * 1rem) + ((100 - 10) * ((100vw - 320px) / (1920 - 320))));
+    margin-top: calc((30 /16 * 1rem) + ((100 - 30) * ((100vw - 320px) / (1920 - 320))));
     margin-bottom: 0;
     padding-right: 0;
     padding-top: calc((20 /16 * 1rem) + ((150 - 20) * ((100vw - 320px) / (1920 - 320))));
@@ -59,6 +67,29 @@
     padding-top: 121.98%;
 }
 
+@media screen and (max-width:1200px) {
+    .beyond-image{
+        padding: 0;
+        height: 100%;
+        background-size: cover;
+        background-position: left;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .beyond{
+        display: block;
+        padding-right: calc((20 /16 * 1rem) + ((130 - 20) * ((100vw - 320px) / (1920 - 320))));
+    }
+
+    .beyond-image{
+        background-size: contain;
+
+        padding: 0;
+        padding-top: 121.98%;
+        width: 100%;
+    }
+}
 
 
 .why{
@@ -71,7 +102,8 @@
 
 .why-h2{
     text-align: center;
-    margin-bottom: calc((20 /16 * 1rem) + ((100 - 20) * ((100vw - 320px) / (1920 - 320))));
+    margin-top: calc((80 /16 * 1rem) + ((100 - 80) * ((100vw - 320px) / (1920 - 320))));
+    margin-bottom: calc((80 /16 * 1rem) + ((100 - 80) * ((100vw - 320px) / (1920 - 320))));
 }
 .why1{
     grid-template-columns: 1fr 1.2fr;
@@ -81,9 +113,88 @@
     grid-template-columns: 1.2fr 1fr;
 }
 
+
 .why-image{
     position: relative;
 }
 .why-img{
     width: 90%;
+    margin: auto;
+}
+
+.why2-container{
+    margin-top: auto;
+}
+
+@media screen and (max-width:1300px) {
+    .why-img1, .why-img2, .why-img3{
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .why-img3{
+        object-position: left;
+    }
+}
+
+@media screen and (max-width:800px) {
+
+    .why-img1, .why-img3{
+        margin-bottom: 50px;
+    }
+    .why-img2, .why-img4{
+        margin-top: 50px;
+    }
+
+    .why1, .why2, .why3, .why4{
+        display: block;
+
+    }
+
+    .why-img{
+        width: 80%;
+    }
+}
+
+
+
+.what{
+    padding-top: calc((20 /16 * 1rem) + ((150 - 20) * ((100vw - 320px) / (1920 - 320))));
+}
+.what-h2{
+    text-align: center;
+    padding-bottom: calc((20 /16 * 1rem) + ((120 - 20) * ((100vw - 320px) / (1920 - 320))));
+
+}
+.what p{
+    margin-bottom: calc((15 /16 * 1rem) + ((20 - 15) * ((100vw - 320px) / (1920 - 320))));
+}
+.what-container{
+    display: flex;
+    align-items: center;
+}
+.what-img{
+    width: calc((100 /16 * 1rem) + ((350 - 100) * ((100vw - 320px) / (1920 - 320))));
+    margin-right: calc((20 /16 * 1rem) + ((60 - 20) * ((100vw - 320px) / (1920 - 320))))
+}
+
+.what-right{
+    margin-left: calc((30 /16 * 1rem) + ((400 - 30) * ((100vw - 320px) / (1920 - 320))));
+}
+.what-h3{
+    color: var(--c-dark);
+    font-family: SourceCode;
+    font-weight: 600;
+    font-size: calc((20 /16 * 1rem) + ((55 - 20) * ((100vw - 320px) / (1920 - 320))));
+
+    padding: calc((20 /16 * 1rem) + ((12 - 20) * ((100vw - 320px) / (1920 - 320))));
+    background-color: var(--c-light);
+    border-bottom-left-radius: calc((4 /16 * 1rem) + ((8 - 4) * ((100vw - 320px) / (1920 - 320))));
+    border-top-left-radius: calc((4 /16 * 1rem) + ((8 - 4) * ((100vw - 320px) / (1920 - 320))));
+    margin-right: calc(-1 * ((20 /16 * 1rem) + ((130 - 20) * ((100vw - 320px) / (1920 - 320)))));
+
+    margin-bottom: calc((20 /16 * 1rem) + ((50 - 20) * ((100vw - 320px) / (1920 - 320))));
+}
+.what-h3::before{
+    content: "//  ";
 }

@@ -67,7 +67,7 @@ button, .a-button{
 
     font-family: lemonMilk-light;
     font-weight: 100;
-    font-size: calc((20 /16 * 1rem) + ((30 - 20) * ((100vw - 320px) / (1920 - 320))));
+    font-size: calc((18 /16 * 1rem) + ((30 - 18) * ((100vw - 320px) / (1920 - 320))));
 
     color: var(--c-light);
 
@@ -79,6 +79,14 @@ button, .a-button{
 .--b-1{
     color:var(--c-dark)
 
+}
+
+.--b-learnMore{
+    border-style: none;
+    font-family: sourceCode;    
+    font-weight: 500;
+    text-decoration: underline;
+    padding: 0;
 }
 
 /* ------------------GLOBAL TYPOGRAPGY------------------ */
@@ -93,19 +101,19 @@ h1, h2, h3{
 h1{
     
     /* Font Size */
-    font-size: calc((30 /16 * 1rem) + ((150 - 30) * ((100vw - 320px) / (1920 - 320))));
+    font-size: calc((50 /16 * 1rem) + ((150 - 50) * ((100vw - 320px) / (1920 - 320))));
 }
 
 h2{
     font-family: lemonMilk-light;
     font-weight: 100;
     /* Font Size */
-    font-size: calc((20 /16 * 1rem) + ((110 - 20) * ((100vw - 320px) / (1920 - 320))));
+    font-size: calc((35 /16 * 1rem) + ((110 - 35) * ((100vw - 320px) / (1920 - 320))));
 }
 
 h3{
     /* Font Size */
-    font-size: calc((34 /16 * 1rem) + ((30 - 34) * ((100vw - 320px) / (1920 - 320))));
+    font-size: calc((20 /16 * 1rem) + ((30 - 20) * ((100vw - 320px) / (1920 - 320))));
 }
 
 p{
@@ -114,7 +122,7 @@ p{
 
 p, li{
     /* Font Size */
-    font-size: calc((15 /16 * 1rem) + ((28 - 15) * ((100vw - 320px) / (1920 - 320))));
+    font-size: calc((16 /16 * 1rem) + ((28 - 16) * ((100vw - 320px) / (1920 - 320))));
 }
 
 ul{
@@ -159,12 +167,23 @@ ul{
 .--t-sub{
     font-size: 0.25em;
 }
-
+@media screen and (max-width:1000px) {
+    .--t-sub{
+        font-size: 0.5em;
+    }
+}
 
 
 /*************************************************************************/
 /******************************* HEADER **********************************/
 /*************************************************************************/
+
+
+
+
+
+
+
 
 /*************************************************************************/
 /******************************* FOOTER **********************************/
@@ -213,13 +232,17 @@ ul{
 .ctaCard{
     margin-bottom: 30px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
 .ctaCard-heading{
     font-family: sourceCode;
-    font-size: calc((20 /16 * 1rem) + ((150 - 20) * ((100vw - 320px) / (1920 - 320))));
+    font-size: calc((60 /16 * 1rem) + ((150 - 60) * ((100vw - 320px) / (1920 - 320))));
     font-weight: 900;
 
     line-height: calc((100 /16 * 1rem) + ((150 - 100) * ((100vw - 320px) / (1920 - 320))));
+}
+.ctaCard a{
+    margin-left: auto;
 }
