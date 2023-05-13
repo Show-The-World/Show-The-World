@@ -200,10 +200,64 @@ ul{
 
 
 
+footer *{
+    color: var(--c-dark);
+}
+footer{
+    background-color: var(--c-light);
 
+    padding: calc((50 /16 * 1rem) + ((80 - 50) * ((100vw - 320px) / (1920 - 320)))) 0;
+}
 
+.footer-h4{
+    font-family: lemonMilk-regular;
+    font-weight: 900;
+    font-size: calc((18 /16 * 1rem) + ((35 - 18) * ((100vw - 320px) / (1920 - 320))));
+    margin-bottom: calc((20 /16 * 1rem) + ((40 - 20) * ((100vw - 320px) / (1920 - 320))));
+}
+.footer-p, .footer-nav *, .footer-small{
+    font-family: sourceCode;
+    font-size: calc((15 /16 * 1rem) + ((20 - 15) * ((100vw - 320px) / (1920 - 320))));
+    font-weight: 200;
+}
+.footer-nav * {
+    font-weight: 400;
 
+    margin-bottom: calc((10 /16 * 1rem) + ((30 - 10) * ((100vw - 320px) / (1920 - 320))));
+}
 
+.footer-container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+
+    gap: calc((40 /16 * 1rem) + ((90 - 40) * ((100vw - 320px) / (1920 - 320))));
+}
+.footer-subContainer{
+    width: calc((280 /16 * 1rem) + ((400 - 280) * ((100vw - 320px) / (1920 - 320))));
+    margin: 0 auto;
+}
+.footer-3{
+    width: max-content;
+}
+
+.footer-seperator{
+    width: 70%;
+    height: calc((1 /16 * 1rem) + ((4 - 1) * ((100vw - 320px) / (1920 - 320))));
+    background-color: var(--c-dark);
+    margin: calc((50 /16 * 1rem) + ((80 - 50) * ((100vw - 320px) / (1920 - 320)))) auto;
+}
+
+.footer-small{
+    display: block;
+    width: max-content;
+    margin: auto;
+
+    font-size: calc((8 /16 * 1rem) + ((23 - 8) * ((100vw - 320px) / (1920 - 320))));
+    font-weight: 500;
+}
 
 
 /*************************************************************************/
@@ -306,3 +360,5 @@ ul{
     text-align: center;
     width: calc((280 /16 * 1rem) + ((1100 - 280) * ((100vw - 320px) / (1920 - 320))));
 }
+
+
