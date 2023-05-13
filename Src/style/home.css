@@ -1,4 +1,5 @@
 .hero-h1-pre{
+    white-space: nowrap;
     font-size: calc((15 /16 * 1rem) + ((90 - 15) * ((100vw - 320px) / (1920 - 320))));
     padding: calc((10 /16 * 1rem) + ((35 - 10) * ((100vw - 320px) / (1920 - 320)))) var(--sidePadding);
     font-family: lemonMilk-regular;

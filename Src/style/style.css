@@ -9,8 +9,10 @@
 
 :root{
     --sidePadding: calc((20 /16 * 1rem) + ((130 - 20) * ((100vw - 320px) / (1920 - 320))));
-    --headerHeight: calc((60 /16 * 1rem) + ((120 - 60) * ((100vw - 320px) / (1920 - 320))));
+    --headerHeight: calc((60 /16 * 1rem) + ((100 - 60) * ((100vw - 320px) / (1920 - 320))));
+    --sectionMargin: calc((150 /16 * 1rem) + ((340 - 150) * ((100vw - 320px) / (1920 - 320))));
 
+    
     /* Main Colors */
     --c-dark: #2c3033;
     --c-light: #fefaf9;
@@ -41,13 +43,13 @@ html{
 
 section{
     /* Gap size underneath each section */
-    margin-bottom: calc((150 /16 * 1rem) + ((340 - 150) * ((100vw - 320px) / (1920 - 320))));
+    margin-bottom: var(--sectionMargin);
 
     /* Overall side gutter size */
     padding: 0 var(--sidePadding);
 }
 article{
-    margin-bottom: calc((150 /16 * 1rem) + ((340 - 150) * ((100vw - 320px) / (1920 - 320))));
+    margin-bottom: var(--sectionMargin);
 
 }
 
@@ -485,3 +487,44 @@ footer{
 }
 
 
+
+
+.subHero{
+    height: calc((200 /16 * 1rem) + ((400 - 200) * ((100vw - 320px) / (1920 - 320))));
+    display: flex;
+}
+
+.subHero-h1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+}
+.subHero-highlight::before{
+    position: absolute;
+    top: -3%;
+    left: 50%;
+    transform: translateX(-50%);
+    content: '';
+    
+    height: 4px;
+    width: 62%;
+    background-color: var(--c-light);
+}
+.subHero-highlight::after{
+    position: absolute;
+    bottom: -6%;
+    left: 50%;
+    transform: translateX(-50%);
+    content: '';
+    
+    height: 4px;
+    width: 62%;
+    background-color: var(--c-light);
+}
+.subHero-highlight{
+    margin: auto;
+    width: min-content;
+    position: relative;
+}
