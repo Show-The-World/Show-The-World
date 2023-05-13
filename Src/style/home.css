@@ -126,6 +126,9 @@
     margin-top: auto;
 }
 
+
+
+
 @media screen and (max-width:1300px) {
     .why-img1, .why-img2, .why-img3{
         height: 100%;
@@ -162,12 +165,14 @@
 
 
 
+
+
 .what{
     padding-top: calc((20 /16 * 1rem) + ((150 - 20) * ((100vw - 320px) / (1920 - 320))));
 }
 .what-h2{
     text-align: center;
-    padding-bottom: calc((20 /16 * 1rem) + ((120 - 20) * ((100vw - 320px) / (1920 - 320))));
+    padding-bottom: calc((80 /16 * 1rem) + ((120 - 80) * ((100vw - 320px) / (1920 - 320))));
 
 }
 .what p{
@@ -201,4 +206,96 @@
 }
 .what-h3::before{
     content: "//  ";
+}
+
+.what-footNote{
+    text-align: center;
+    font-family: lemonMilk-light;
+    font-weight: 100;
+    font-size: calc((20 /16 * 1rem) + ((85 - 20) * ((100vw - 320px) / (1920 - 320))));
+}
+.--t-whatSub{
+    font-size: 0.5em;
+}
+
+@media screen and (max-width:850px) {
+    .what-right{
+        margin-left: 0;
+    }
+}
+
+
+@media screen and (max-width:530px) {
+    .what-h3{
+        margin-right: 0;
+        padding: 0;
+        border-radius: 0;
+    }
+
+    .what-container{
+        flex-direction: column-reverse;
+        background-color: var(--c-light);
+        justify-content: center;
+    }
+    
+    .what-subContainer{
+        padding-right: 20px;
+        padding-left: 20px;
+        background-color: var(--c-dark);
+    }
+}
+
+
+
+
+.ourProcess{
+    background-color: var(--c-light);
+
+    padding: calc((40 /16 * 1rem) + ((100 - 40) * ((100vw - 320px) / (1920 - 320)))) 0;
+}
+.ourProcess * {
+    color: var(--c-dark);
+}
+
+.ourProcess-h2{
+    margin-bottom: calc((60 /16 * 1rem) + ((100 - 60) * ((100vw - 320px) / (1920 - 320))));
+    text-align: center;
+}
+.ourProcess-icon{
+    width: calc((150 /16 * 1rem) + ((200 - 150) * ((100vw - 320px) / (1920 - 320))));
+}
+
+.ourProcess-container{
+    display: flex;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    align-items: baseline;
+
+    gap: 40px;
+    row-gap: 70px;
+}
+.process-h3{
+    font-family: sourceCode;
+    font-weight: 500;
+    font-size: calc((30 /16 * 1rem) + ((50 - 30) * ((100vw - 320px) / (1920 - 320))));
+    width: max-content;
+}
+
+.ourProcess-card{
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    flex: 1;
+}
+
+@media screen and (max-width:450px){
+    .ourProcess-container{
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
 }

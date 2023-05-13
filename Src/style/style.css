@@ -43,7 +43,10 @@ section{
     /* Overall side gutter size */
     padding: 0 calc((20 /16 * 1rem) + ((130 - 20) * ((100vw - 320px) / (1920 - 320))));
 }
+article{
+    margin-bottom: calc((150 /16 * 1rem) + ((340 - 150) * ((100vw - 320px) / (1920 - 320))));
 
+}
 
 img{
     max-width: 100%;
@@ -77,16 +80,20 @@ button, .a-button{
 
 /* Custom Button Stylings */
 .--b-1{
-    color:var(--c-dark)
-
+    color:var(--c-dark);
+}
+.--b-2{
+    color:var(--c-accent);
 }
 
 .--b-learnMore{
+    color: var(--c-light);
     border-style: none;
     font-family: sourceCode;    
     font-weight: 500;
     text-decoration: underline;
     padding: 0;
+
 }
 
 /* ------------------GLOBAL TYPOGRAPGY------------------ */
@@ -245,4 +252,57 @@ ul{
 }
 .ctaCard a{
     margin-left: auto;
+}
+
+
+
+
+
+.cta *{
+    margin: auto;
+}
+.cta-h2{
+    text-align: center;
+    font-weight: 500;
+    font-family: sourceCode;
+}
+
+.cta-h2First{
+    position: relative;
+}
+.cta-h2First::before{
+    position: absolute;
+    content: '$';
+    left: -30%;
+}
+.cta-h2Last{
+    position: relative;
+}
+
+@keyframes blink {
+    0%, 50% {
+      opacity: 1;
+    }
+    50.01%, 100% {
+      opacity: 0;
+    }
+}
+.cta-h2Last::after{
+    content: '';
+    position: absolute;
+    right: -4%;
+    top: 30%;
+    
+    background-color: var(--c-light);
+
+    height: 55%;
+    width: 1%;
+    border-radius: 10px;
+
+    animation: blink 1s infinite;
+}
+
+.cta-p{
+    text-align: center;
+    width: calc((280 /16 * 1rem) + ((1100 - 280) * ((100vw - 320px) / (1920 - 320))));
 }
