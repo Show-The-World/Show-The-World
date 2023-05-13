@@ -1,3 +1,17 @@
+.hero-h1-pre{
+    font-size: calc((15 /16 * 1rem) + ((90 - 15) * ((100vw - 320px) / (1920 - 320))));
+    padding: calc((10 /16 * 1rem) + ((35 - 10) * ((100vw - 320px) / (1920 - 320)))) var(--sidePadding);
+    font-family: lemonMilk-regular;
+    font-weight: 500;
+}
+
+.hero-seperator{
+    height: calc((3 /16 * 1rem) + ((1 - 3) * ((100vw - 320px) / (1920 - 320))));
+    width: 100%;
+    background-color: var(--c-light);
+}
+
+
 .service{
     margin-bottom: 0;
     background-color: var(--c-light);
@@ -11,9 +25,6 @@
     color: var(--c-light);
     background-color: var(--c-dark);
     padding: 0 calc((20 /16 * 1rem) + ((100 - 20) * ((100vw - 320px) / (1920 - 320))));
-}
-.service-background{
-
 }
 
 .service-image{
@@ -79,7 +90,7 @@
 @media screen and (max-width:650px) {
     .beyond{
         display: block;
-        padding-right: calc((20 /16 * 1rem) + ((130 - 20) * ((100vw - 320px) / (1920 - 320))));
+        padding-right: var(--sidePadding);
     }
 
     .beyond-image{
@@ -200,7 +211,7 @@
     background-color: var(--c-light);
     border-bottom-left-radius: calc((4 /16 * 1rem) + ((8 - 4) * ((100vw - 320px) / (1920 - 320))));
     border-top-left-radius: calc((4 /16 * 1rem) + ((8 - 4) * ((100vw - 320px) / (1920 - 320))));
-    margin-right: calc(-1 * ((20 /16 * 1rem) + ((130 - 20) * ((100vw - 320px) / (1920 - 320)))));
+    margin-right: calc(-1 * var(--sidePadding));
 
     margin-bottom: calc((20 /16 * 1rem) + ((50 - 20) * ((100vw - 320px) / (1920 - 320))));
 }
