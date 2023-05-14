@@ -34,16 +34,22 @@
 
 
 .service{
+    gap: calc((40 /16 * 1rem) + ((80 - 40) * ((100vw - 320px) / (1920 - 320))));
     background-color: var(--c-light);
-    grid-template-columns: 1fr 1.1fr;
+    grid-template-columns: 1fr 1.1;
 }
 .service-p{
     background-color: var(--c-dark);
     font-size: calc((20 /16 * 1rem) + ((40 - 20) * ((100vw - 320px) / (1920 - 320))));
     padding: 0 calc((20 /16 * 1rem) + ((40 - 20) * ((100vw - 320px) / (1920 - 320))));
 }
+.service-container{
+    object-fit: cover;
+}
 
-
+.service-img{
+    height: 100px;
+}
 
 .beyond{
     color: var(--c-dark);

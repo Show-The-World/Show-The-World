@@ -9,7 +9,7 @@
 
 :root{
     --sidePadding: calc((20 /16 * 1rem) + ((130 - 20) * ((100vw - 320px) / (1920 - 320))));
-    --headerHeight: calc((60 /16 * 1rem) + ((150 - 60) * ((100vw - 320px) / (1920 - 320))));
+    --headerHeight: calc((60 /16 * 1rem) + ((120 - 60) * ((100vw - 320px) / (1920 - 320))));
     --sectionMargin: calc((150 /16 * 1rem) + ((340 - 150) * ((100vw - 320px) / (1920 - 320))));
 
     
@@ -68,13 +68,15 @@ img{
 /* Default Button Styling */
 
 button, .a-button{
+    cursor: pointer;
+
     display: block;
     width: max-content;
     height: min-content;
 
     /* Padding Sizes */
-    padding: calc((20 /16 * 1rem) + ((26 - 20) * ((100vw - 320px) / (1920 - 320))));
-    border-radius: calc((2 /16 * 1rem) + ((6 - 2) * ((100vw - 320px) / (1920 - 320))));
+    padding: calc((16 /16 * 1rem) + ((18 - 16) * ((100vw - 320px) / (1920 - 320))));
+    border-radius: calc((2 /16 * 1rem) + ((4 - 2) * ((100vw - 320px) / (1920 - 320))));
 
     font-family: lemonMilk-light;
     font-weight: 100;
@@ -551,6 +553,7 @@ footer{
     color: var(--c-dark);
 }
 .step-h2First{
+    width: calc((20 /16 * 1rem) + ((100 - 20) * ((100vw - 320px) / (1920 - 320))));
     position: relative;
 }
 .step-h2First::before{
@@ -558,7 +561,7 @@ footer{
 
     position: absolute;
 
-    left: -0%;
+    left: -20%;
     bottom: -0%;
     font-size: calc((50 /16 * 1rem) + ((300 - 50) * ((100vw - 320px) / (1920 - 320))));
     font-weight: 500;
