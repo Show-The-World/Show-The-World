@@ -203,9 +203,9 @@
     color: var(--c-dark);
     font-family: SourceCode;
     font-weight: 600;
-    font-size: calc((20 /16 * 1rem) + ((55 - 20) * ((100vw - 320px) / (1920 - 320))));
+    font-size: calc((24 /16 * 1rem) + ((55 - 24) * ((100vw - 320px) / (1920 - 320))));
 
-    padding: calc((20 /16 * 1rem) + ((12 - 20) * ((100vw - 320px) / (1920 - 320))));
+    padding: calc((8 /16 * 1rem) + ((12 - 8) * ((100vw - 320px) / (1920 - 320))));
     background-color: var(--c-light);
     border-bottom-left-radius: calc((4 /16 * 1rem) + ((8 - 4) * ((100vw - 320px) / (1920 - 320))));
     border-top-left-radius: calc((4 /16 * 1rem) + ((8 - 4) * ((100vw - 320px) / (1920 - 320))));
@@ -235,23 +235,33 @@
 
 
 @media screen and (max-width:530px) {
-    .what-h3{
-        margin-right: 0;
-        padding: 0;
-        border-radius: 0;
-    }
-
+    
     .what-container{
         flex-direction: column-reverse;
+
         background-color: var(--c-light);
         justify-content: center;
+
+        padding: 0 calc(2 * var(--sidePadding));
+        padding-top: 40px;
     }
     
-    .what-subContainer{
-        padding-right: 20px;
-        padding-left: 20px;
-        background-color: var(--c-dark);
+    .what-subContainer *{
+        color: var(--c-dark);
+        margin-bottom: 60px;
     }
+
+    .what-img{
+        width: 100%;
+    }
+
+    .what-h3{
+        text-align: center;        
+        padding: 0;
+        border-radius: 0;
+        margin-bottom: 40px;
+    }
+
 }
 
 
