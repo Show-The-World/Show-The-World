@@ -34,22 +34,115 @@
 
 
 .service{
-    gap: calc((40 /16 * 1rem) + ((80 - 40) * ((100vw - 320px) / (1920 - 320))));
+    gap: calc((30 /16 * 1rem) + ((80 - 30) * ((100vw - 320px) / (1920 - 320))));
     background-color: var(--c-light);
-    grid-template-columns: 1fr 1.1;
+    grid-template-columns: 1fr 1.1fr;
+    height: min-content;
+    overflow-inline: hidden;
 }
 .service-p{
     background-color: var(--c-dark);
     font-size: calc((20 /16 * 1rem) + ((40 - 20) * ((100vw - 320px) / (1920 - 320))));
     padding: 0 calc((20 /16 * 1rem) + ((40 - 20) * ((100vw - 320px) / (1920 - 320))));
-}
-.service-container{
-    object-fit: cover;
+    height: min-content;
 }
 
-.service-img{
-    height: 100px;
+.service-container{
+    position: relative;
 }
+.service-subContainer{
+    position: absolute;
+    width: 100%;
+
+    top: -100px;
+}
+.service-img{
+    width: 100%;
+}
+
+.service-subSubContainer{
+    position: relative;
+}
+
+.service-subSubContainer{
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+.service-subSubContainer::before, .service-subSubContainer::after{
+    content: '';
+    
+    position: absolute;
+    
+    background-color: var(--c-accent);
+}
+.service-subSubContainer::before{
+    z-index: -1;
+    height: calc((80 /16 * 1rem) + ((250 - 80) * ((100vw - 320px) / (1920 - 320))));
+    width: calc((80 /16 * 1rem) + ((250 - 80) * ((100vw - 320px) / (1920 - 320))));
+    left: -7%;
+    top: -7%;
+}
+.service-subSubContainer::after{
+    z-index: 3;
+    height: calc((40 /16 * 1rem) + ((120 - 40) * ((100vw - 320px) / (1920 - 320))));
+    width: calc((40 /16 * 1rem) + ((120 - 40) * ((100vw - 320px) / (1920 - 320))));
+    right: -7%;
+    bottom: -6%;
+}
+
+@media screen and (max-width:1300px){
+    .service-subContainer{
+        top: 50%;
+        
+        height: 120%;
+        
+        transform: translateX(var(--sidePadding)) translateY(-50%);
+    }
+
+    .service-img{
+        object-fit: cover;
+        height: 100%;
+        object-position: 63%;
+    }
+    .service-subSubContainer::before, .service-subSubContainer::after{
+        display: none;
+    }
+}
+
+
+
+@media screen and (max-width:800px) {
+    .service-subSubContainer::before, .service-subSubContainer::after{
+        display: block;
+    }
+
+    .service-subContainer{
+        transform: translateX(0);
+    }
+
+    .service{
+        grid-template-columns: 1fr;
+        gap: 100px;
+        
+        background: none;
+    }
+
+    .service-p{
+        margin: 0 calc(-1 * var(--sidePadding));
+        border-left: var(--sidePadding) solid ;
+        border-right: var(--sidePadding) solid;
+        border-color: var(--c-light);
+        
+    }
+    .service-subContainer{
+        position: static;
+        width: 90%;
+        margin: auto;
+    }
+}
+
+
 
 .beyond{
     color: var(--c-dark);

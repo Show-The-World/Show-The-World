@@ -9,7 +9,7 @@
 
 :root{
     --sidePadding: calc((20 /16 * 1rem) + ((130 - 20) * ((100vw - 320px) / (1920 - 320))));
-    --headerHeight: calc((60 /16 * 1rem) + ((120 - 60) * ((100vw - 320px) / (1920 - 320))));
+    --headerHeight: calc((60 /16 * 1rem) + ((100 - 60) * ((100vw - 320px) / (1920 - 320))));
     --sectionMargin: calc((150 /16 * 1rem) + ((340 - 150) * ((100vw - 320px) / (1920 - 320))));
 
     
@@ -41,7 +41,6 @@ html{
 }
 
 html,body{
-    /* overflow-x: hidden; */
 }
 
 section{
@@ -413,8 +412,11 @@ footer{
 
 
 .ctaCard{
-    margin-bottom: calc((0 /16 * 1rem) + ((30 - 0) * ((100vw - 320px) / (1920 - 320))));
+    margin-bottom: 0;
+    padding-bottom: calc((0 /16 * 1rem) + ((30 - 0) * ((100vw - 320px) / (1920 - 320))));
     position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 .ctaCard-heading{
     font-family: sourceCode;
@@ -431,6 +433,25 @@ footer{
     transform: translateY(-50%);
     right: var(--sidePadding);
 }
+
+.ctaCard-backText{
+    width: max-content;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    font-family: lemonMilk-medium;
+    font-size: calc((70 /16 * 1rem) + ((120 - 70) * ((100vw - 320px) / (1920 - 320))));
+    opacity: 0.07;
+}
+.ctaCard-backLine2{
+    transform: translateX(-45%);
+}
+.ctaCard-backLine3{
+    transform: translateX(-20%);
+}
+
 
 @media screen and (max-width:672px) {
     .ctaCard a{
