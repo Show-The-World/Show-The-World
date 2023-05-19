@@ -11,12 +11,15 @@
     --sidePadding: calc((20 /16 * 1rem) + ((130 - 20) * ((100vw - 320px) / (1920 - 320))));
     --headerHeight: calc((60 /16 * 1rem) + ((100 - 60) * ((100vw - 320px) / (1920 - 320))));
     --sectionMargin: calc((150 /16 * 1rem) + ((340 - 150) * ((100vw - 320px) / (1920 - 320))));
-
+    --sectionMargin-half: calc(var(--sectionMargin) / 2);
     
     /* Main Colors */
     --c-dark: #2c3033;
+    --c-offDark: #363a3c;
     --c-light: #fefaf9;
+    --c-offLight: #f5f1f0;
     --c-accent: #e8d181;
+    --c-accent: #e56969;
 }
 
 
@@ -212,6 +215,9 @@ header{
     padding: 0 var(--sidePadding);
     position: sticky;
     top: 0;
+}
+.header-logo{
+    width: calc((70 /16 * 1rem) + ((120 - 70) * ((100vw - 320px) / (1920 - 320))));
 }
 .header-hamburger-button{
     width: calc((22 /16 * 1rem) + ((60 - 22) * ((100vw - 320px) / (1920 - 320))));
