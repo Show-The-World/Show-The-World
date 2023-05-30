@@ -45,6 +45,8 @@
     font-size: calc((20 /16 * 1rem) + ((40 - 20) * ((100vw - 320px) / (1920 - 320))));
     padding: 0 calc((20 /16 * 1rem) + ((40 - 20) * ((100vw - 320px) / (1920 - 320))));
     height: min-content;
+
+    text-align: justify;
 }
 
 .service-container{
@@ -118,8 +120,6 @@
     }
 }
 
-
-
 @media screen and (max-width:800px) {
     .service-subSubContainer::before, .service-subSubContainer::after{
         display: block;
@@ -152,6 +152,8 @@
 
 
 
+
+
 .beyond{
     color: var(--c-dark);
     background-color: var(--c-light);
@@ -161,6 +163,55 @@
     margin-bottom: 0;
 }
 
+.beyond-container{
+    background-color: var(--c-offLight);
+    padding: calc((20 /16 * 1rem) + ((60 - 20) * ((100vw - 320px) / (1920 - 320))));
+    border-radius: calc((10 /16 * 1rem) + ((20 - 10) * ((100vw - 320px) / (1920 - 320))));
+    box-shadow: inset;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: calc((50 /16 * 1rem) + ((100 - 50) * ((100vw - 320px) / (1920 - 320))));
+    -webkit-box-shadow: inset 0px 0px 21px 1px #000000; 
+    box-shadow: inset 0px 0px 21px 1px #000000;
+}
+
+.beyond-h2{
+    text-align: center;
+}
+.beyond-h3{
+    margin-bottom: calc((15 /16 * 1rem) + ((30 - 15) * ((100vw - 320px) / (1920 - 320))));
+    font-size: calc((15 /16 * 1rem) + ((25 - 15) * ((100vw - 320px) / (1920 - 320))));
+    font-weight: 500;
+}
+.beyond-p{
+}
+
+@media screen and (max-width:1000px){
+    .beyond-container{
+        grid-template-columns: 1fr;
+    }
+}
+.beyond-img{
+}
+.beyond-imgContainer{
+    background-color: var(--c-light);
+    position: relative;
+    z-index: 1;
+}
+.beyond-imgContainer::before{
+    z-index: -2;
+    content: '';
+    position: absolute;
+    height: 1px;
+    background-color: #ded8d8c2;
+    bottom: 35%;
+    left: 0;
+    right: 0;
+
+    -webkit-box-shadow: 0px 0px 20px 8px #ded8d8c2; 
+/* box-shadow: 0px 0px 15px 10px rgba(0,0,0,0.76); */
+}
 
 
 

@@ -1,22 +1,13 @@
 
-.styleBand{
-    overflow-x: hidden;
-    background-color: var(--c-accent);
-}
-.styleBand-span{
-    white-space: nowrap;
-    font-family: lemonMilk-bold;
-    font-size: calc((30 /16 * 1rem) + ((70 - 30) * ((100vw - 320px) / (1920 - 320))));
-    opacity: 0.2;
-    font-style: italic;
-    transform: translateX(100px);
-}
+
 
 .intro{
     background-color: var(--c-light);
     padding: calc(var(--sectionMargin-half) /2) calc((30 /16 * 1rem) + ((600 - 30) * ((100vw - 320px) / (1920 - 320))));
     color: var(--c-dark);
     margin-bottom: 0;
+
+    text-align: justify;
 }
 
 

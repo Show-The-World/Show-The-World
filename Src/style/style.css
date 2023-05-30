@@ -112,26 +112,24 @@ button, .a-button{
 
 /* Default text Styling */
 
-h1, h2, h3{
-    font-family: lemonMilk-medium;
-}
-
 
 h1{
     
+    font-family: lemonMilk-medium;
     /* Font Size */
     font-size: calc((50 /16 * 1rem) + ((150 - 50) * ((100vw - 320px) / (1920 - 320))));
     font-weight: 200;
 }
 
 h2{
-    font-family: lemonMilk-light;
+    font-family: lemonMilk-regular;
     font-weight: 100;
     /* Font Size */
     font-size: calc((35 /16 * 1rem) + ((110 - 35) * ((100vw - 320px) / (1920 - 320))));
 }
 
 h3{
+    font-family: lemonMilk-medium;
     /* Font Size */
     font-size: calc((20 /16 * 1rem) + ((30 - 20) * ((100vw - 320px) / (1920 - 320))));
 }
@@ -333,7 +331,7 @@ footer *{
 footer{
     background-color: var(--c-light);
 
-    padding: calc((50 /16 * 1rem) + ((80 - 50) * ((100vw - 320px) / (1920 - 320)))) 0;
+    padding: var(--sectionMargin-half) var(--sidePadding);
 }
 
 .footer-h4{
@@ -356,7 +354,7 @@ footer{
 .footer-container{
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: space-evenly;
 
     flex-wrap: wrap;
 
@@ -364,7 +362,7 @@ footer{
 }
 .footer-subContainer{
     width: calc((280 /16 * 1rem) + ((400 - 280) * ((100vw - 320px) / (1920 - 320))));
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 .footer-3{
     width: max-content;
@@ -384,6 +382,12 @@ footer{
 
     font-size: calc((8 /16 * 1rem) + ((23 - 8) * ((100vw - 320px) / (1920 - 320))));
     font-weight: 500;
+}
+@media screen and (max-width:589px) {
+    .footer-container{
+        justify-content: flex-start;
+    }
+    
 }
 
 
@@ -514,6 +518,22 @@ footer{
 .cta-p{
     text-align: center;
     width: calc((280 /16 * 1rem) + ((1100 - 280) * ((100vw - 320px) / (1920 - 320))));
+}
+
+
+
+
+.styleBand{
+    overflow-x: hidden;
+    background-color: var(--c-accent);
+}
+.styleBand-span{
+    white-space: nowrap;
+    font-family: lemonMilk-bold;
+    font-size: calc((30 /16 * 1rem) + ((70 - 30) * ((100vw - 320px) / (1920 - 320))));
+    opacity: 0.2;
+    font-style: italic;
+    transform: translateX(100px);
 }
 
 
