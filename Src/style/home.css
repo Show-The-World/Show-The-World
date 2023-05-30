@@ -184,20 +184,17 @@
     font-size: calc((15 /16 * 1rem) + ((25 - 15) * ((100vw - 320px) / (1920 - 320))));
     font-weight: 500;
 }
-.beyond-p{
-}
 
 @media screen and (max-width:1000px){
     .beyond-container{
         grid-template-columns: 1fr;
     }
 }
-.beyond-img{
-}
 .beyond-imgContainer{
     background-color: var(--c-light);
     position: relative;
     z-index: 1;
+    /* padding-bottom: var(--sectionMargin-half); */
 }
 .beyond-imgContainer::before{
     z-index: -2;
@@ -210,7 +207,7 @@
     right: 0;
 
     -webkit-box-shadow: 0px 0px 20px 8px #ded8d8c2; 
-/* box-shadow: 0px 0px 15px 10px rgba(0,0,0,0.76); */
+    box-shadow: 0px 0px 20px 8px #ded8d8c2; 
 }
 
 
@@ -387,6 +384,6 @@
     background-color: var(--c-offLight);
     margin-bottom: 0;
 }
-.cta *{
+.cta h2, .cta p{
     color: var(--c-dark);
 }

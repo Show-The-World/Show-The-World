@@ -85,6 +85,7 @@ button, .a-button{
     font-size: calc((18 /16 * 1rem) + ((30 - 18) * ((100vw - 320px) / (1920 - 320))));
 
     color: var(--c-light);
+    background-color: var(--c-dark);
 
     border-style: solid;
     border-width: calc((1 /16 * 1rem) + ((2 - 1) * ((100vw - 320px) / (1920 - 320))));
@@ -93,19 +94,58 @@ button, .a-button{
 /* Custom Button Stylings */
 .--b-1{
     color:var(--c-dark);
+    background: var(--c-light);
 }
 .--b-2{
-    color:var(--c-accent);
+    color: var(--c-accent);
+    background: none;
+}
+.--b-3{
+    background-color: var(--c-offLight);
+    color: var(--c-dark);
+}
+.--b-big{
+    position: relative;
+    z-index: 2;
+    width: min-content;
+}
+.--b-big::before{
+    position: absolute;
+    content: '';
+    z-index: -1;
+    
+    background-color: black;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: -17%;
+    border-radius: calc((2 /16 * 1rem) + ((4 - 2) * ((100vw - 320px) / (1920 - 320))));
+}
+.--b-big::after{
+    position: absolute;
+    content: '';
+    z-index: -2;
+
+    --padding: -9px;
+    top: calc(17% + var(--padding));
+    bottom: calc(-17% + var(--padding));
+    right: var(--padding);
+    left: var(--padding);
+
+    border-radius: calc((2 /16 * 1rem) + ((4 - 2) * ((100vw - 320px) / (1920 - 320))));
+    border-style: solid;
+    border-width: 7px;
+    border-color: black;
 }
 
 .--b-learnMore{
     color: var(--c-light);
     border-style: none;
-    font-family: sourceCode;    
-    font-weight: 500;
+    font-family: openSans;    
+    font-weight: 300;
     text-decoration: underline;
     padding: 0;
-
+    background: none;
 }
 
 /* ------------------GLOBAL TYPOGRAPGY------------------ */
@@ -372,7 +412,7 @@ footer{
     width: 70%;
     height: calc((1 /16 * 1rem) + ((4 - 1) * ((100vw - 320px) / (1920 - 320))));
     background-color: var(--c-dark);
-    margin: calc((50 /16 * 1rem) + ((80 - 50) * ((100vw - 320px) / (1920 - 320)))) auto;
+    margin: var(--sectionMargin-half) auto;
 }
 
 .footer-small{
@@ -436,6 +476,7 @@ footer{
     line-height: calc((100 /16 * 1rem) + ((150 - 100) * ((100vw - 320px) / (1920 - 320))));
 }
 .ctaCard a{
+    z-index: 2;
     text-align: center;
     position: absolute;
 
