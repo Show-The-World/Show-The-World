@@ -374,7 +374,6 @@ h2:not(.ctaCard h2):before{
     grid-template-columns: 1fr 1fr 1fr;
     gap: 100px;
 
-    margin: 0 var(--sidePadding);
 
     position: relative;
     z-index: 1;
@@ -387,7 +386,7 @@ h2:not(.ctaCard h2):before{
     bottom: var(--padding);
     right: var(--padding);
     left: var(--padding);
-    top: 6%;
+    top: 8%;
     
     background-color: var(--c-offDark);
 }
@@ -402,11 +401,11 @@ h2:not(.ctaCard h2):before{
 
     .research-container{
         grid-template-columns: 1fr;
-        margin-top: calc(-1 * var(--padding));
+        padding-top: calc(-1 * var(--padding));
     }
 
     .research-container::before{
-        top: var(--padding);
+        top: 0;
     }
 
     .research-p{
@@ -429,9 +428,8 @@ h2:not(.ctaCard h2):before{
     .research-p{
         width: 100%;
     }
-
-    .research-container{
-        display: none;
+    .research-h3{
+        font-size: calc((20 /16 * 1rem) + ((40 - 20) * ((100vw - 320px) / (1920 - 320))));
     }
 }
 

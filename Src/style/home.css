@@ -388,7 +388,8 @@
 .cta h2, .cta p{
     color: var(--c-dark);
 }
-
-
+.cta-h2Last::after{
+    background-color: var(--c-dark);
+}
 
 

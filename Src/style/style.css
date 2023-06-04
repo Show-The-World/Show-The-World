@@ -281,7 +281,7 @@ header{
     width: 100%;
     height: var(--headerHeight);
 
-    background-color: var(--c-dark);
+    background-color: var(--c-offDark);
     
     display: flex;
     z-index: 3;
@@ -344,15 +344,12 @@ header{
     padding-left: calc((30 /16 * 1rem) + ((100 - 30) * ((100vw - 320px) / (1920 - 320))));
     padding-right: calc((20 /16 * 1rem) + ((120 - 20) * ((100vw - 320px) / (1920 - 320))));
 
-    background-color: var(--c-dark);
+    background-color: var(--c-offDark);
 
     text-align: right;
 }
 .header-nav > ul > *:not(:last-child){
     margin-bottom: calc((20 /16 * 1rem) + ((60 - 20) * ((100vw - 320px) / (1920 - 320))));
-}
-.header-nav > ul:first-child{
-    margin-top: calc((20 /16 * 1rem) + ((60 - 20) * ((100vw - 320px) / (1920 - 320))));
 }
 
 .header-hamburger-checkbox{
@@ -365,8 +362,9 @@ header{
 
 @media screen and (min-width:1100px) {
     header{
-        background-color: var(--c-dark);
+        background-color: var(--c-offDark);
     }
+    
     
     .header-nav{
         top: 0;
@@ -380,7 +378,7 @@ header{
     .header-nav *{
         display: inline-block;
         margin-bottom: 0;
-        background-color: var(--c-dark);
+        background-color: var(--c-offDark);
         color: var(--c-light);
     }
     .header-label{
@@ -392,6 +390,11 @@ header{
     }
 }
 
+@media screen and (max-width:1099px){
+    .header-nav > ul:first-child{
+        margin-top: calc((20 /16 * 1rem) + ((60 - 20) * ((100vw - 320px) / (1920 - 320))));
+    }
+}
 
 
 
