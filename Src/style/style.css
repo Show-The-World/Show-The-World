@@ -52,6 +52,8 @@ section{
 
     /* Overall side gutter size */
     padding: 0 var(--sidePadding);
+
+    scroll-margin-top: var(--headerHeight);
 }
 article{
     margin-bottom: var(--sectionMargin);

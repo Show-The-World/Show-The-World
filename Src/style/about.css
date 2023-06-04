@@ -102,7 +102,7 @@
 
 
 footer{
-    background-color: var(--c-offDark);
+    background-color: var(--c-dark);
 }
 
 footer *{
@@ -112,3 +112,17 @@ footer *{
 .footer-seperator{
     background-color: var(--c-light);
 }
+
+.logo-footer::before, .logo-footer::after{
+    color: var(--c-light);
+}
+
+
+.--b-big::before{
+    background-color: white;
+}
+.--b-big::after{
+    border-color: white;
+
+}
+

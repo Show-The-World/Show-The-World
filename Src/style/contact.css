@@ -142,3 +142,7 @@ footer *{
 .footer-seperator{
     background-color: var(--c-light);
 }
+
+.logo-footer::before, .logo-footer::after{
+    color: var(--c-light);
+}

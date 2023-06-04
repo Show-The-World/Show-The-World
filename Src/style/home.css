@@ -216,7 +216,7 @@
 .ourProcess{
     background-color: var(--c-light);
 
-    padding-top: var(--sectionMargin-half);
+    padding-top: var(--sectionMargin);
     padding-bottom: var(--sectionMargin-half);
     margin-bottom: var(--sectionMargin-half);
 }
@@ -225,7 +225,7 @@
 }
 
 .ourProcess-h2{
-    margin-bottom: calc((60 /16 * 1rem) + ((250 - 60) * ((100vw - 320px) / (1920 - 320))));
+    margin-bottom: calc(0.5 * var(--sidePadding));
     text-align: center;
 }
 .ourProcess-icon{
@@ -259,7 +259,7 @@
 
     flex: 1;
 }
-.ourProcess-card::before{
+/* .ourProcess-card::before{
     counter-increment: x;
     content: counter(x);
 
@@ -271,7 +271,7 @@
     font-size: calc((130 /16 * 1rem) + ((160 - 130) * ((100vw - 320px) / (1920 - 320))));
     font-family: lemonMilk-regular;
     opacity: 0.08;
-}
+} */
 
 @media screen and (max-width:450px){
     .ourProcess-container{
@@ -302,6 +302,8 @@
 .what-container{
     display: flex;
     align-items: center;
+    margin-bottom: calc((100 /16 * 1rem) + ((200 - 100) * ((100vw - 320px) / (1920 - 320))));
+
 }
 .what-img{
     width: calc((100 /16 * 1rem) + ((350 - 100) * ((100vw - 320px) / (1920 - 320))));
@@ -312,10 +314,11 @@
     margin-left: calc((30 /16 * 1rem) + ((400 - 30) * ((100vw - 320px) / (1920 - 320))));
 }
 .what-h3{
+    text-align: left;
     color: var(--c-dark);
     font-family: SourceCode;
     font-weight: 600;
-    font-size: calc((24 /16 * 1rem) + ((55 - 24) * ((100vw - 320px) / (1920 - 320))));
+    font-size: calc((12 /16 * 1rem) + ((55 - 12) * ((100vw - 320px) / (1920 - 320))));
 
     padding: calc((8 /16 * 1rem) + ((12 - 8) * ((100vw - 320px) / (1920 - 320))));
     background-color: var(--c-light);
@@ -368,7 +371,7 @@
     }
 
     .what-h3{
-        text-align: center;        
+        text-align: left;        
         padding: 0;
         border-radius: 0;
         margin-bottom: 40px;

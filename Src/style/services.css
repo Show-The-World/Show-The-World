@@ -526,12 +526,15 @@ h2:not(.ctaCard h2):before{
 
 
 
-.ctaCard{
-    background-color: var(--c-light);
+.cta{
+    padding-top: var(--sectionMargin-half);
+    padding-bottom: var(--sectionMargin-half);
+    background-color: var(--c-offLight);
+    margin-bottom: 0;
+}
+.cta h2, .cta p{
     color: var(--c-dark);
 }
-
-
-
-
-
+.cta-h2Last::after{
+    background-color: var(--c-dark);
+}
