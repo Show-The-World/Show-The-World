@@ -251,7 +251,6 @@
 }
 
 .ourProcess-card{
-    width: max-content;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -263,12 +262,14 @@
 .ourProcess-card::before{
     counter-increment: x;
     content: counter(x);
-    position: absolute;
 
-    font-size: calc((130 /16 * 1rem) + ((270 - 130) * ((100vw - 320px) / (1920 - 320))));
+    position: absolute;
+    left: 50%;
+    bottom: 200px;
+    transform: translateX(-170%);
+
+    font-size: calc((130 /16 * 1rem) + ((160 - 130) * ((100vw - 320px) / (1920 - 320))));
     font-family: lemonMilk-regular;
-    left: calc(-1 *((80 /16 * 1rem) + ((20 - 80) * ((100vw - 320px) / (1920 - 320)))));
-    bottom: 1em;
     opacity: 0.08;
 }
 
@@ -387,3 +388,7 @@
 .cta h2, .cta p{
     color: var(--c-dark);
 }
+
+
+
+

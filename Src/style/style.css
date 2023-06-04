@@ -95,6 +95,8 @@ button, .a-button{
 .--b-1{
     color:var(--c-dark);
     background: var(--c-light);
+    -webkit-box-shadow: 7px 7px 0px 0px #000000; 
+    box-shadow: 7px 7px 0px 0px #000000;
 }
 .--b-2{
     color: var(--c-accent);
@@ -142,11 +144,48 @@ button, .a-button{
     color: var(--c-light);
     border-style: none;
     font-family: openSans;    
-    font-weight: 300;
+    font-weight: 600;
     text-decoration: underline;
     padding: 0;
     background: none;
 }
+
+
+
+.logo{
+    z-index: 0;
+    color: var(--c-accent);
+    position: relative;
+    --offset: 4px;
+}
+.logo::before, .logo::after, .logo{
+    font-size: calc((25 /16 * 1rem) + ((50 - 25) * ((100vw - 320px) / (1920 - 320))));
+    font-family: lemonMilk-bold;
+    font-style: italic;
+}
+.logo::before, .logo::after{
+    content: "STW";
+    color: var(--c-light);
+    position: absolute;
+}
+.logo::before{
+    z-index: -1;
+    top: var(--offset);
+    left: var(--offset);
+}
+.logo::after{
+    z-index: 1;
+    bottom: var(--offset);
+    right: var(--offset);
+}
+
+.logo-footer::before, .logo-footer::after{
+    color: var(--c-dark);
+}
+.logo-footer::before, .logo-footer::after, .logo-footer{
+    font-size: calc((100 /16 * 1rem) + ((150 - 100) * ((100vw - 320px) / (1920 - 320))));
+}
+
 
 /* ------------------GLOBAL TYPOGRAPGY------------------ */
 
@@ -284,7 +323,7 @@ header{
 .header-nav * {
     font-family: sourceCode;
     font-size: calc((16 /16 * 1rem) + ((24 - 16) * ((100vw - 320px) / (1920 - 320))));
-    color: var(--c-dark);
+    color: var(--c-ligth);
 }
 
 .header-nav a::before{
@@ -305,14 +344,16 @@ header{
     padding-left: calc((30 /16 * 1rem) + ((100 - 30) * ((100vw - 320px) / (1920 - 320))));
     padding-right: calc((20 /16 * 1rem) + ((120 - 20) * ((100vw - 320px) / (1920 - 320))));
 
-    background-color: var(--c-light);
+    background-color: var(--c-dark);
 
     text-align: right;
 }
 .header-nav > ul > *:not(:last-child){
     margin-bottom: calc((20 /16 * 1rem) + ((60 - 20) * ((100vw - 320px) / (1920 - 320))));
 }
-
+.header-nav > ul:first-child{
+    margin-top: calc((20 /16 * 1rem) + ((60 - 20) * ((100vw - 320px) / (1920 - 320))));
+}
 
 .header-hamburger-checkbox{
     display: none;
@@ -585,6 +626,7 @@ footer{
     display: flex;
 
     margin-top: calc(0.3 * var(--headerHeight));
+    margin-bottom: var(--sectionMargin-half);
 }
 
 .subHero-h1{
