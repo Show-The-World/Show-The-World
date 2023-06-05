@@ -171,6 +171,8 @@ button, .a-button{
 
 
 .logo{
+    display: inline-block;
+    
     z-index: 0;
     color: var(--c-accent);
     position: relative;
