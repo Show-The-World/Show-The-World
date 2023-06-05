@@ -70,23 +70,24 @@
                 <a class="form-a form-mail" href="mailto:info@showtheworld.digital">info@showtheworld.digital</a>
                 <a class="form-a form-web" href="https://showtheworld.digital">showtheworld.digital</a>
             </div>
-            <form name="contact" netlify>
+            <form name="contact" method="POST" data-netlify="true" onsubmit="submit" netlify>
                 <div class="form-subContainer">
-                  <input class='form-input' placeholder=" " type="text" id="name" required>
+                  <input class='form-input' placeholder=" " type="text" id="name" required name="name">
                   <label class='form-label' for="name">Name</label>
                 </div>
                 <div class="form-subContainer">
-                  <input class='form-input' placeholder=" " type="tel" id="phone" required>
+                  <input class='form-input' placeholder=" " type="tel" id="phone" required name="phone">
                   <label class='form-label' for="phone">Phone</label>
                 </div>
                 <div class="form-subContainer">
-                  <input class='form-input' placeholder=" " type="email" id="email" required>
+                  <input class='form-input' placeholder=" " type="email" id="email" required name="email">
                   <label class='form-label' for="email">Email</label>
                 </div>
                 <div class="form-subContainer">
-                  <textarea placeholder=" " id="message" required></textarea>
+                  <textarea placeholder=" " id="message" required></textarea name="message">
                   <label class='form-label' for="message">Message</label>
                 </div>
+
                 <button class="--b-2" type="submit">Send</button>
             </form>
     </div>
