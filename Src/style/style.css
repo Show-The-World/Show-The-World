@@ -94,25 +94,35 @@ button, .a-button{
 }
 
 /* Custom Button Stylings */
+.a-button{
+    transition: all 0.2s;
+}
 .--b-1{
     color:var(--c-dark);
     background: var(--c-light);
 }
 .--b-1:hover{
-    background-color: var(--c-offLight);
+    background-color: var(--c-offDark);
+    color: var(--c-light);
 }
 .--b-2:hover{
-    background-color: var(--c-offDark);
+    background-color: var(--c-light);
+    color: var(--c-dark);
 }
 .--b-3{
     color: var(--c-accent);
+}
+.--b-3:hover{
+    background-color: var(--c-accent);
+    color: var(--c-dark);
 }
 .--b-4{
     background-color: var(--c-offLight);
     color:var(--c-dark);
 }
 .--b-4:hover{
-    background-color: var(--c-light);
+    background-color: var(--c-offDark);
+    color: var(--c-light);
 }
 .--b-big{
     position: relative;
@@ -165,6 +175,8 @@ button, .a-button{
     color: var(--c-accent);
     position: relative;
     --offset: 4px;
+
+    transition: all 0.3s cubic-bezier(0.21, 0.58, 0, 2.76);
 }
 .logo::before, .logo::after, .logo{
     font-size: calc((25 /16 * 1rem) + ((50 - 25) * ((100vw - 320px) / (1920 - 320))));
@@ -192,6 +204,10 @@ button, .a-button{
 }
 .logo-footer::before, .logo-footer::after, .logo-footer{
     font-size: calc((100 /16 * 1rem) + ((150 - 100) * ((100vw - 320px) / (1920 - 320))));
+}
+
+.logo:hover{
+    transform: scale(1.1);
 }
 
 
@@ -301,9 +317,6 @@ header{
     position: sticky;
     top: 0;
 }
-.header-logo{
-    width: calc((70 /16 * 1rem) + ((120 - 70) * ((100vw - 320px) / (1920 - 320))));
-}
 .header-hamburger-button{
     width: calc((22 /16 * 1rem) + ((60 - 22) * ((100vw - 320px) / (1920 - 320))));
     height: calc((3 /16 * 1rem) + ((6 - 3) * ((100vw - 320px) / (1920 - 320))));
@@ -340,7 +353,10 @@ header{
 .header-nav a::after{
     content: ' >';
 }
+.header-nav a:hover{
+    font-weight: 800;
 
+}
 .header-nav{
     z-index: 3;
     position: fixed;
@@ -437,10 +453,14 @@ footer{
     font-size: calc((15 /16 * 1rem) + ((20 - 15) * ((100vw - 320px) / (1920 - 320))));
     font-weight: 200;
 }
-.footer-nav * {
+.footer-nav li {
     font-weight: 400;
 
     margin-bottom: calc((10 /16 * 1rem) + ((30 - 10) * ((100vw - 320px) / (1920 - 320))));
+}
+.footer-nav a:hover{
+    font-weight: 800;
+    color: var(--c-accent);
 }
 
 .footer-container{
@@ -536,8 +556,8 @@ footer{
     transform: translateY(-50%);
     right: var(--sidePadding);
 }
-
 .ctaCard-backText{
+    user-select: none;
     width: max-content;
     
     position: absolute;
@@ -555,6 +575,12 @@ footer{
     transform: translateX(-20%);
 }
 
+.ctaCard-light{
+    background-color: var(--c-light);
+}
+.ctaCard-light *{
+    color: var(--c-dark);
+}
 
 @media screen and (max-width:672px) {
     .ctaCard a{
@@ -562,7 +588,6 @@ footer{
         width: 118px;
     }
 }
-
 
 .cta *{
     margin: auto;
@@ -627,6 +652,7 @@ footer{
     opacity: 0.2;
     font-style: italic;
     transform: translateX(100px);
+    user-select: none;
 }
 
 

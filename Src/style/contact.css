@@ -29,6 +29,11 @@
     font-weight: 800;
 
     position: relative;
+
+    transition: 0.1s;
+}
+.form-a:hover{
+    transform: scaleY(1.2);
 }
 .form-a::before{
     content: '';
@@ -116,6 +121,7 @@ textarea:focus ~ .form-label, textarea:not(:placeholder-shown) ~ .form-label{
     color: var(--c-dark);
     display: block;
 }
+
 
 @media screen and (max-width:1300px){
     .form-content{
