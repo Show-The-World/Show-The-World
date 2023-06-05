@@ -97,16 +97,22 @@ button, .a-button{
 .--b-1{
     color:var(--c-dark);
     background: var(--c-light);
-    -webkit-box-shadow: 7px 7px 0px 0px #000000; 
-    box-shadow: 7px 7px 0px 0px #000000;
 }
-.--b-2{
-    color: var(--c-accent);
-    background: none;
+.--b-1:hover{
+    background-color: var(--c-offLight);
+}
+.--b-2:hover{
+    background-color: var(--c-offDark);
 }
 .--b-3{
+    color: var(--c-accent);
+}
+.--b-4{
     background-color: var(--c-offLight);
-    color: var(--c-dark);
+    color:var(--c-dark);
+}
+.--b-4:hover{
+    background-color: var(--c-light);
 }
 .--b-big{
     position: relative;
