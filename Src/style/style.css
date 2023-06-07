@@ -9,7 +9,7 @@
 
 :root{
     --sidePadding: calc((20 /16 * 1rem) + ((130 - 20) * ((100vw - 320px) / (1920 - 320))));
-    --headerHeight: calc((60 /16 * 1rem) + ((100 - 60) * ((100vw - 320px) / (1920 - 320))));
+    --headerHeight: calc((50 /16 * 1rem) + ((100 - 50) * ((100vw - 320px) / (1920 - 320))));
     --sectionMargin: calc((150 /16 * 1rem) + ((340 - 150) * ((100vw - 320px) / (1920 - 320))));
     --sectionMargin-half: calc(var(--sectionMargin) / 2);
     
@@ -162,12 +162,15 @@ button, .a-button{
     color: var(--c-light);
     border-style: none;
     font-family: openSans;    
+    font-size: calc((15 /16 * 1rem) + ((25 - 15) * ((100vw - 320px) / (1920 - 320))));
     font-weight: 600;
     text-decoration: underline;
     padding: 0;
     background: none;
 }
-
+.--b-learnMore:hover{
+    color: var(--c-accent);
+}
 
 
 .logo{
