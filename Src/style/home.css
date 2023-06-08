@@ -159,7 +159,6 @@
     background-color: var(--c-light);
 
     padding-top: var(--sectionMargin-half);
-    padding-bottom: var(--sectionMargin-half);
     margin-bottom: 0;
 }
 
@@ -194,7 +193,9 @@
     background-color: var(--c-light);
     position: relative;
     z-index: 1;
-    /* padding-bottom: var(--sectionMargin-half); */
+
+
+    /* padding: var(--sectionMargin-half) 0; */
 }
 .beyond-imgContainer::before{
     z-index: -2;
@@ -318,15 +319,15 @@
     color: var(--c-dark);
     font-family: SourceCode;
     font-weight: 600;
-    font-size: calc((12 /16 * 1rem) + ((55 - 12) * ((100vw - 320px) / (1920 - 320))));
+    font-size: calc((20 /16 * 1rem) + ((40 - 20) * ((100vw - 320px) / (1920 - 320))));
 
-    padding: calc((8 /16 * 1rem) + ((12 - 8) * ((100vw - 320px) / (1920 - 320))));
+    padding: 6px;
     background-color: var(--c-light);
-    border-bottom-left-radius: calc((4 /16 * 1rem) + ((8 - 4) * ((100vw - 320px) / (1920 - 320))));
-    border-top-left-radius: calc((4 /16 * 1rem) + ((8 - 4) * ((100vw - 320px) / (1920 - 320))));
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
     margin-right: calc(-1 * var(--sidePadding));
 
-    margin-bottom: calc((20 /16 * 1rem) + ((50 - 20) * ((100vw - 320px) / (1920 - 320))));
+    margin-bottom: 20px;
 }
 .what-h3::before{
     content: "//  ";
@@ -354,7 +355,6 @@
     .what-container{
         flex-direction: column-reverse;
 
-        background-color: var(--c-light);
         justify-content: center;
 
         padding: 0 calc(2 * var(--sidePadding));
@@ -362,12 +362,11 @@
     }
     
     .what-subContainer *{
-        color: var(--c-dark);
         margin-bottom: 60px;
     }
 
     .what-img{
-        width: 100%;
+        width: 80%;
     }
 
     .what-h3{

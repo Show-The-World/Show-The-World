@@ -87,6 +87,26 @@ h2:not(.ctaCard h2):before{
     font-family: sourceCode;
     font-size: calc((150 /16 * 1rem) + ((250 - 150) * ((100vw - 320px) / (1920 - 320))));
     font-weight: 500;
+
+    letter-spacing: -0.14em;
+
+    position: relative;
+}
+.offers-price::before{
+    content: '$';
+    position: absolute;
+    font-size: 0.4em;
+    left: calc(-1 *((25 /16 * 1rem) + ((50 - 25) * ((100vw - 320px) / (1920 - 320)))));
+}
+.offers-price-host::after{
+    content: '/mo';
+    position: absolute;
+
+    right: calc(-1 *((50 /16 * 1rem) + ((90 - 50) * ((100vw - 320px) / (1920 - 320)))));
+    bottom: 0.5em;
+
+    font-size: 0.2em;
+    letter-spacing: normal;
 }
 .offers-h3{
     text-align: center;
@@ -394,6 +414,10 @@ h2:not(.ctaCard h2):before{
     font-family: sourceCode;
 }
 @media screen and (max-width:1200px){
+    .research-container::before{
+        display: none;
+    }
+
     .research-card{
         display: flex;
         justify-content: space-between;
@@ -401,7 +425,8 @@ h2:not(.ctaCard h2):before{
 
     .research-container{
         grid-template-columns: 1fr;
-        padding-top: calc(-1 * var(--padding));
+        padding: 10px;
+        background-color: var(--c-offDark);
     }
 
     .research-container::before{
@@ -421,7 +446,7 @@ h2:not(.ctaCard h2):before{
     }
 }
 
-@media screen and (max-width:850px){
+@media screen and (max-width:720px){
     .research-card{
         flex-direction: column;
     }
@@ -472,7 +497,7 @@ h2:not(.ctaCard h2):before{
     background-color: var(--c-accent);
 }
 .seo-h3, .seo-p{
-    padding: 20px 0 20px 20px;
+    padding: 20px;
     background-color: var(--c-dark);
 }
 .seo-p{
