@@ -9,7 +9,7 @@
 
 :root{
     --sidePadding: calc((20 /16 * 1rem) + ((130 - 20) * ((100vw - 320px) / (1920 - 320))));
-    --headerHeight: calc((40 /16 * 1rem) + ((100 - 40) * ((100vw - 320px) / (1920 - 320))));
+    --headerHeight: calc((40 /16 * 1rem) + ((80 - 40) * ((100vw - 320px) / (1920 - 320))));
     --sectionMargin: calc((150 /16 * 1rem) + ((340 - 150) * ((100vw - 320px) / (1920 - 320))));
     --sectionMargin-half: calc(var(--sectionMargin) / 2);
     
@@ -138,7 +138,7 @@ button, .a-button{
 .--b-big .--b-1:hover{
     color: var(--c-dark);
     background-color: var(--c-light);
-    transform: translateY(10px);
+    transform: translateY(5px);
 }
 .--b-big .--b-2{
     box-shadow: 0px 10px 0px 0px rgb(255, 255, 255);
@@ -146,7 +146,7 @@ button, .a-button{
 .--b-big .--b-2:hover{
     color: var(--c-light);
     background-color: var(--c-dark);
-    transform: translateY(10px);
+    transform: translateY(5px);
 }
 .--b-big::after{
     position: absolute;
@@ -450,7 +450,7 @@ footer *{
 footer{
     background-color: var(--c-light);
 
-    padding: var(--sectionMargin-half) var(--sidePadding);
+    padding: calc(0.25 * var(--sectionMargin)) var(--sidePadding);
 }
 
 .footer-h4{
@@ -495,7 +495,7 @@ footer{
     width: 70%;
     height: calc((1 /16 * 1rem) + ((4 - 1) * ((100vw - 320px) / (1920 - 320))));
     background-color: var(--c-dark);
-    margin: var(--sectionMargin-half) auto;
+    margin: calc(0.25 * var(--sectionMargin)) auto;
 }
 
 .footer-small{
