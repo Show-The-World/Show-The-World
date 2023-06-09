@@ -224,9 +224,10 @@
 .ourProcess{
     background-color: var(--c-light);
 
-    padding-top: var(--sectionMargin);
+    margin-bottom: 0;
+
+    padding-top: var(--sectionMargin-half);
     padding-bottom: var(--sectionMargin-half);
-    margin-bottom: var(--sectionMargin-half);
 }
 .ourProcess * {
     color: var(--c-dark);
@@ -302,7 +303,14 @@
 
 
 .what{
-    margin-bottom: var(--sectionMargin-half);
+    padding-bottom: var(--sectionMargin-half);
+    padding-top: var(--sectionMargin-half);
+    margin-bottom: 0;
+
+    background-size: 20vw 20vw;
+    background-image:
+    linear-gradient(to right, rgb(92, 92, 92) 0.1px, transparent 1px),
+    linear-gradient(to bottom, rgb(92, 92, 92) 0.1px, transparent 1px);
 }
 .what-h2{
     text-align: center;
