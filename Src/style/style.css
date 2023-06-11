@@ -8,7 +8,7 @@
 
 
 :root{
-    --sidePadding: calc((20 /16 * 1rem) + ((130 - 20) * ((100vw - 320px) / (1920 - 320))));
+    --sidePadding: calc((15 /16 * 1rem) + ((130 - 15) * ((100vw - 320px) / (1920 - 320))));
     --headerHeight: calc((40 /16 * 1rem) + ((80 - 40) * ((100vw - 320px) / (1920 - 320))));
     --sectionMargin: calc((150 /16 * 1rem) + ((340 - 150) * ((100vw - 320px) / (1920 - 320))));
     --sectionMargin-half: calc(var(--sectionMargin) / 2);
@@ -254,7 +254,7 @@ p{
 
 p, li{
     /* Font Size */
-    font-size: calc((16 /16 * 1rem) + ((28 - 16) * ((100vw - 320px) / (1920 - 320))));
+    font-size: calc((16 /16 * 1rem) + ((20 - 16) * ((100vw - 320px) / (1920 - 320))));
 }
 
 ul{
