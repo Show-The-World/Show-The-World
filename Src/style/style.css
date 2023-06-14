@@ -254,8 +254,8 @@ p{
 
 p, li{
     /* Font Size */
-    font-size: calc((16 /16 * 1rem) + ((20 - 16) * ((100vw - 320px) / (1920 - 320))));
-}
+    font-size: calc((16 /16 * 1rem) + ((22 - 16) * ((100vw - 320px) / (1920 - 320))));
+} 
 
 ul{
     list-style: none;
@@ -716,48 +716,9 @@ footer{
 
 
 
-.step{
-    padding: calc(var(--sectionMargin) / 2 ) calc((20 /16 * 1rem) + ((430 - 20) * ((100vw - 320px) / (1920 - 320))));
-    margin: 0;
-}
-.step a{
-    margin: auto;
-}
-.step-h2{
-    font-weight: 800;
-    font-family: sourceCode;
-    font-size: calc((25 /16 * 1rem) + ((60 - 25) * ((100vw - 320px) / (1920 - 320))));
-}
-.step-p{
-    margin-top: calc((35 /16 * 1rem) + ((80 - 35) * ((100vw - 320px) / (1920 - 320))));
-    font-weight: 300;
-}
-
-.step-light{
-    background-color: var(--c-light);
-}
-.step-light *{
-    color: var(--c-dark);
-}
-.step-h2First{
-    width: calc((20 /16 * 1rem) + ((100 - 20) * ((100vw - 320px) / (1920 - 320))));
-    position: relative;
-}
-.step-h2First::before{
-    content: attr(stepVal);
-
-    position: absolute;
-
-    line-height: 0px;
-    left: calc(-1 *((35 /16 * 1rem) + ((300 - 35) * ((100vw - 320px) / (1920 - 320)))));
-    top: 0;
-    font-size: calc((150 /16 * 1rem) + ((300 - 150) * ((100vw - 320px) / (1920 - 320))));
-    font-weight: 500;
-    opacity: 0.5;
-}
-
-@media screen and (max-width: 830px) {
-    .step-h2First::before{
-        opacity: 0.2;
-    }
+.bg-wrapper{
+    background-size: 20vw 20vw;
+    background-image:
+    linear-gradient(to right, rgb(92, 92, 92) 0.1px, transparent 1px),
+    linear-gradient(to bottom, rgb(92, 92, 92) 0.1px, transparent 1px);
 }

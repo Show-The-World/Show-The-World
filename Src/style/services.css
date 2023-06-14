@@ -98,16 +98,6 @@ h2:not(.ctaCard h2):before{
     font-size: 0.4em;
     left: calc(-1 *((25 /16 * 1rem) + ((50 - 25) * ((100vw - 320px) / (1920 - 320)))));
 }
-.offers-price-host::after{
-    content: '/mo';
-    position: absolute;
-
-    right: calc(-1 *((50 /16 * 1rem) + ((90 - 50) * ((100vw - 320px) / (1920 - 320)))));
-    bottom: 0.5em;
-
-    font-size: 0.2em;
-    letter-spacing: normal;
-}
 .offers-h3{
     text-align: center;
     font-family: lemonMilk-regular;
@@ -379,7 +369,7 @@ h2:not(.ctaCard h2):before{
 
 
 .research{
-    margin-top: var(--sectionMargin-half);
+    padding-top: var(--sectionMargin-half);
 }
 .research-h2{
     text-align: center;
@@ -545,6 +535,8 @@ h2:not(.ctaCard h2):before{
 
 .landing{
     padding: 0 calc(2 *var(--sidePadding));
+    padding-bottom: var(--sectionMargin);
+    margin-bottom: 0;
 }
 .landing-h2{
     text-align: center;

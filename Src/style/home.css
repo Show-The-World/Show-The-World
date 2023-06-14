@@ -56,7 +56,7 @@
     position: absolute;
     width: 100%;
 
-    top: -100px;
+    top: -40%;
 }
 .service-img{
     width: 100%;
@@ -148,6 +148,12 @@
         width: 90%;
         margin: auto;
     }
+}
+@media screen and (max-width:400px){
+    .service-container{
+        display: none;
+    }
+    
 }
 
 
@@ -243,7 +249,7 @@
 .ourProcess-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 70px;
+    grid-gap: 120px;
     align-items: end;
 
     counter-reset: x;
@@ -306,11 +312,6 @@
     padding-bottom: var(--sectionMargin-half);
     padding-top: var(--sectionMargin-half);
     margin-bottom: 0;
-
-    background-size: 20vw 20vw;
-    background-image:
-    linear-gradient(to right, rgb(92, 92, 92) 0.1px, transparent 1px),
-    linear-gradient(to bottom, rgb(92, 92, 92) 0.1px, transparent 1px);
 }
 .what-h2{
     text-align: center;
@@ -319,6 +320,7 @@
 }
 .what p{
     margin-bottom: calc((15 /16 * 1rem) + ((20 - 15) * ((100vw - 320px) / (1920 - 320))));
+    font-size: calc((18 /16 * 1rem) + ((25 - 18) * ((100vw - 320px) / (1920 - 320))));
 }
 .what-container{
     display: flex;
@@ -379,14 +381,13 @@
 
         padding: 0 calc(2 * var(--sidePadding));
         padding-top: 40px;
+
+        margin-bottom: 70px;
     }
     
-    .what-subContainer *{
-        margin-bottom: 60px;
-    }
 
     .what-img{
-        width: 80%;
+        display: none;
     }
 
     .what-h3{
