@@ -228,21 +228,21 @@ button, .a-button{
 
 h1{
     
-    font-family: lemonMilk-medium;
+    font-family: lemonMilk-regular;
+    font-weight: bolder;
     /* Font Size */
     font-size: calc((50 /16 * 1rem) + ((150 - 50) * ((100vw - 320px) / (1920 - 320))));
-    font-weight: 200;
 }
 
 h2{
     font-family: lemonMilk-regular;
-    font-weight: 100;
+    font-weight: normal;
     /* Font Size */
     font-size: calc((35 /16 * 1rem) + ((110 - 35) * ((100vw - 320px) / (1920 - 320))));
 }
 
 h3{
-    font-family: lemonMilk-medium;
+    font-family: lemonMilk-bold;
     /* Font Size */
     font-size: calc((20 /16 * 1rem) + ((30 - 20) * ((100vw - 320px) / (1920 - 320))));
 }
@@ -267,29 +267,36 @@ ul{
     src: url(../Assets/LEMONMILK-Bold.otf);
 }
 
-@font-face {
-    font-family: lemonMilk-medium;
-    src: url(../Assets/LEMONMILK-Medium.otf);
-}
-
-@font-face {
-    font-family: lemonMilk-regular;
-    src: url(../Assets/LEMONMILK-Regular.otf);
-}
 
 @font-face {
     font-family: lemonMilk-light;
     src: url(../Assets/LEMONMILK-Light.otf);
 }
 
+
 @font-face {
+    font-display: swap;
+    font-family: lemonMilk-regular;
+    font-style: normal;
+    font-weight: 400;
+    src: url(../Assets/LEMONMILK-Regular.otf);
+}
+
+
+@font-face {
+    font-display: swap;
     font-family: sourceCode;
-    src: url(../Assets/SourceCodePro-VariableFont_wght.ttf);
+    font-style: normal;
+    font-weight: 400;
+    src: url(../Assets/source-code-pro-regular.woff2) format('woff2');
 }
 
 @font-face {
+    font-display: swap;
     font-family: openSans;
-    src: url(../Assets/OpenSans-VariableFont_wdth\,wght.ttf);
+    font-style: normal;
+    font-weight: 400;
+    src: url(../Assets/open-sans-regular.woff2) format('woff2');
 }
 
 /* Custom text Styling */
@@ -574,9 +581,10 @@ footer{
     top: 0;
     left: 0;
 
-    font-family: lemonMilk-medium;
+    font-family: lemonMilk-regular;
+    font-weight: 1000;
     font-size: calc((70 /16 * 1rem) + ((120 - 70) * ((100vw - 320px) / (1920 - 320))));
-    opacity: 0.07;
+    opacity: 0.045;
 }
 .ctaCard-backLine2{
     transform: translateX(-45%);
