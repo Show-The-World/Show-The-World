@@ -60,6 +60,7 @@
 }
 .service-img{
     width: 100%;
+    height: 100%;
 }
 
 .service-subSubContainer{
@@ -104,7 +105,6 @@
 
     .service-img{
         object-fit: cover;
-        height: 100%;
         object-position: 63%;
     }
     .service-subSubContainer::before{
@@ -201,8 +201,10 @@
     position: relative;
     z-index: 1;
 
-
-    /* padding: var(--sectionMargin-half) 0; */
+}
+.beyond-img{
+    width: 100%;
+    height: 100%;
 }
 .beyond-imgContainer::before{
     z-index: -2;
@@ -245,6 +247,7 @@
 }
 .ourProcess-icon{
     width: calc((150 /16 * 1rem) + ((200 - 150) * ((100vw - 320px) / (1920 - 320))));
+    height: 100%;
 }
 .ourProcess-container{
     display: grid;
@@ -330,7 +333,8 @@
 }
 .what-img{
     width: calc((100 /16 * 1rem) + ((350 - 100) * ((100vw - 320px) / (1920 - 320))));
-    margin-right: calc((20 /16 * 1rem) + ((60 - 20) * ((100vw - 320px) / (1920 - 320))))
+    height: 100%;
+    margin-right: calc((20 /16 * 1rem) + ((60 - 20) * ((100vw - 320px) / (1920 - 320))));
 }
 
 .what-right{

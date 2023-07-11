@@ -263,12 +263,14 @@ ul{
 
 
 @font-face {
+    font-display: swap;
     font-family: lemonMilk-bold;
     src: url(../Assets/LEMONMILK-Bold.otf);
 }
 
 
 @font-face {
+    font-display: swap;
     font-family: lemonMilk-light;
     src: url(../Assets/LEMONMILK-Light.otf);
 }
