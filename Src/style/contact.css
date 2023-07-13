@@ -3,7 +3,8 @@
     color: var(--c-dark);
     background-color: var(--c-light);
 
-    font-family: lemonMilk-medium;
+    font-family: lemonMilk-regular;
+    font-weight: 900;
 
     padding: calc((20 /16 * 1rem) + ((50 - 20) * ((100vw - 320px) / (1920 - 320)))) 0;
     margin: 0 calc(-1 * var(--sidePadding));
