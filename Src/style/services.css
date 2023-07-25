@@ -291,27 +291,21 @@ h2:not(.ctaCard h2):before{
     color: var(--c-accent);
     margin-bottom: 5px;
 }
-.access-img1{
+.access-img{
     margin-left: var(--sidePadding);
-}
-.access-img2{
-    display: none;
 }
 @media screen and (max-width:1330px){
     .access{
         padding-left: var(--sidePadding);
         padding-right: var(--sidePadding);
     }
-    .access-img2{
+    .access-img{
         display: block;
         margin-top: 50px;
         width: 100%;
         height: 100%;
 
         object-fit: containe;
-    }
-    .access-img1{
-        display: none;
     }
     .access-image{
         margin-right: calc(-1 * var(--sidePadding));

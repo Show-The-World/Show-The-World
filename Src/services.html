@@ -197,8 +197,11 @@
             </div>
 
             <div class="access-image">
-                <img loading="lazy" class="access-img1" src="./Assets/access-1.svg" alt="">
-                <img loading="lazy" class="access-img2" src="./Assets/access-2.svg" alt="">
+                <picture>
+                    <source srcset="./Assets/access-2.svg" media="(max-width: 1330px)">
+                    <source srcset="./Assets/access-1.svg" media="(min-width: 1331px)">
+                    <img loading="lazy" class="access-img" src="./Assets/access-2.svg" alt="">
+                </picture>
             </div>
         </div>
     </section>
