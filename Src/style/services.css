@@ -444,6 +444,11 @@ h2:not(.ctaCard h2):before{
 
 
 
+.seo{
+    margin-bottom: 0;
+    padding-bottom: var(--sectionMargin);
+}
+
 .seo-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -527,10 +532,8 @@ h2:not(.ctaCard h2):before{
 
 
 
-.landing{
+/* .landing{
     padding: 0 calc(2 *var(--sidePadding));
-    padding-bottom: var(--sectionMargin);
-    margin-bottom: 0;
 }
 .landing-h2{
     text-align: center;
@@ -544,7 +547,7 @@ h2:not(.ctaCard h2):before{
         left: 0;
         transform: translateX(0);
     }
-}
+} */
 
 
 
