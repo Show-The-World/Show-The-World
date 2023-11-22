@@ -302,7 +302,7 @@ h2:not(.ctaCard h2):before{
     .access-img{
         display: block;
         margin-top: 50px;
-        width: 100%;
+        width: 90%;
         height: 100%;
 
         object-fit: contain;
