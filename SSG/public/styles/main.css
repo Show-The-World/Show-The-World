@@ -42,10 +42,8 @@ html{
     color: var(--c-light);
 }
 
-html,body{
-}
 
-section{
+section, main{
     /* Gap size underneath each section */
     margin-bottom: var(--sectionMargin);
 

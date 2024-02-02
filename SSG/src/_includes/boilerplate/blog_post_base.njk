@@ -1,0 +1,15 @@
+{% extends "boilerplate/boilerplate.njk" %}
+
+{% block links %}
+    {{ super() }}
+    <link rel="stylesheet" href="/styles/blog_post.css">
+{% endblock %}
+
+
+
+{% block content %}
+    <main>
+        {{content | safe}}
+
+    </main>
+{% endblock %}
