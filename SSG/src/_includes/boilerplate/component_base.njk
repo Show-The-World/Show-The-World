@@ -1,0 +1,17 @@
+---
+    layout: /boilerplate/component_boilerplate.njk
+
+---
+
+
+
+
+
+{% for section in sectionView %}
+    {% if section.startsWith("global-") %}
+        {% include "sections/" + section + ".njk" %}
+    {% else %}
+        {% set content = localSections[section].content%}
+        {% include "components/markup/layout/" + localSections[section].layout + ".njk" %}<br>
+    {% endif %}
+{% endfor %}

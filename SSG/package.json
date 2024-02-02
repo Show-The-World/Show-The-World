@@ -1,0 +1,28 @@
+{
+  "name": "ssg",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon build_components.js",
+    "start": "eleventy --serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "css": "^3.0.0",
+    "handlebar": "^1.0.0",
+    "jsdom": "^24.0.0",
+    "nodemon": "^3.0.2"
+  },
+  "nodemonConfig":{
+    "watch":[
+      "process_components.js",
+      "build_components.js",
+      "utils.js"
+    ]
+  }
+}
