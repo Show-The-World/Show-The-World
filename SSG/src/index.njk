@@ -178,18 +178,3 @@
         <div class="--b-big"><a href="./contact.html#form" class="a-button --b-1">Let's Get In Touch</a></div>
     </section>    
 {% endblock %}
-
-
-{% block beforeClosingBody %}
-    <script>
-    if (window.netlifyIdentity) {
-        window.netlifyIdentity.on("init", user => {
-        if (!user) {
-            window.netlifyIdentity.on("login", () => {
-            document.location.href = "/admin/";
-            });
-        }
-        });
-    }
-    </script>
-{% endblock %}
