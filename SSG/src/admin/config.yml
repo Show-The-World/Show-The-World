@@ -5,12 +5,12 @@ backend:
 media_folder: "SSG/src/assets/blog"
 public_folder: "/assets/blog/"
 
-collection:
+collections:
   - name: "blog"
     label: "Blog"
     folder: "SSG/src/blog"
     create: true
-    slug: {{slug}}
+    slug: "{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
       
