@@ -1,6 +1,5 @@
 ---
     layout: boilerplate/blog_post_base.njk
-    slug: "learn-to-code"
     title: "Why Learning to Code is Your Next Best Career Move"
     tags: blogPost
 ---

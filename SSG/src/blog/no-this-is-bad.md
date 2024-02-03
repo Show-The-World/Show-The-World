@@ -1,6 +1,5 @@
 ---
     layout: boilerplate/blog_post_base.njk
-    slug: "no-this-is-bad"
     title: "Help, i'm stuck"
     tags: blogPost
 ---

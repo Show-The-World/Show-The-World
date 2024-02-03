@@ -16,6 +16,8 @@
     <link rel="Preloads" as="font/otf" href="/assets/LEMONMILK-Light.otf">
     <link rel="Preloads" as="font/woff2" href="/assets/open-sans-regular.woff2">
     <link rel="Preloads" as="font/woff2" href="/assets/source-code-pro-regular.woff2">
+
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 
 
@@ -253,5 +255,19 @@
     <small class="footer-small">Copyright 2023 Show The World. All rights reserved.</small>
 </footer>
     
+
+    
+    <script>
+    if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+        if (!user) {
+            window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+            });
+        }
+        });
+    }
+    </script>
+
 </body>
 </html>

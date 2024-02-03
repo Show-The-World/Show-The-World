@@ -15,6 +15,8 @@
     <link rel="Preloads" as="font/otf" href="/assets/LEMONMILK-Light.otf">
     <link rel="Preloads" as="font/woff2" href="/assets/open-sans-regular.woff2">
     <link rel="Preloads" as="font/woff2" href="/assets/source-code-pro-regular.woff2">
+
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 
 
@@ -41,5 +43,7 @@
     {% if hasFooter | default(true) %}
         {% include "layouts/footer.html" %}
     {% endif %}
+
+    {% block beforeClosingBody %}{% endblock %}
 </body>
 </html>
