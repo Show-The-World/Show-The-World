@@ -130,12 +130,14 @@ header .logoWrapper{
 
 .--l-threeSplitCard{
     display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .--l-threeSplitCard > *{
-    flex: 1;
+    margin: calc(var(--size-spacing1) / 2);
 
-    margin: var(--size-spacing1);
+    width: calc((270 /16 * 1rem) + ((450 - 270) * ((100vw - 320px) / (1920 - 320))));
 }
 
 
@@ -518,11 +520,6 @@ h2:not(.ctaCard h2):before{
 
 
 
-.offers{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
 .offers .card{
     background-color: var(--c-dark);
     padding: var(--size-spacing1);
@@ -550,8 +547,9 @@ h2:not(.ctaCard h2):before{
     text-align: center;
     font-weight: 1000;
     font-family: lemonMilk-regular;
-    font-size: calc((25 /16 * 1rem) + ((40 - 25) * ((100vw - 320px) / (1920 - 320))));
+    font-size: calc((25 /16 * 1rem) + ((35 - 25) * ((100vw - 320px) / (1920 - 320))));
     margin-top: calc(-0.75em - var(--size-spacing1));
+    width: max-content;
 }
 
 
