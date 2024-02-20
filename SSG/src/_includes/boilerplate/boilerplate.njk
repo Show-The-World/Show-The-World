@@ -3,36 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>{{ title }}</title>
     <meta name="description" content="Show the World Digital: Where websites aren't just tools, they're your business's secret weapon. Quick-loading, SEO-smart, and tailored for Canadian small businesses. Expect more than just a pretty page – we deliver results without the fluff.">
 
+
+    <!-- Style Imports -->
     <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/layouts.css">
     {% block links %}
     {% endblock %}
 
-    <link rel="Preloads" as="font/otf" href="/assets/LEMONMILK-Regular.otf">
-    <link rel="Preloads" as="font/otf" href="/assets/LEMONMILK-Bold.otf">
-    <link rel="Preloads" as="font/otf" href="/assets/LEMONMILK-Light.otf">
-    <link rel="Preloads" as="font/woff2" href="/assets/open-sans-regular.woff2">
-    <link rel="Preloads" as="font/woff2" href="/assets/source-code-pro-regular.woff2">
 
+
+    <!-- Netlify Identity -->
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 
 
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-5QVEKYTDNS"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+{# INSERT GOOGLE TAG #}
 
-  gtag('config', 'G-5QVEKYTDNS');
-</script>
 
 <body>
     {% if hasHeader | default(true) %}
-        {% include "layouts/header.html" %}
+        {% include "layouts/header.njk" %}
     {% endif %}
 
 
@@ -41,9 +36,11 @@
 
 
     {% if hasFooter | default(true) %}
-        {% include "layouts/footer.html" %}
+        {% include "layouts/footer.njk" %}
     {% endif %}
 
+
+    <!-- Netlify Identity -->
     <script>
     if (window.netlifyIdentity) {
         window.netlifyIdentity.on("init", user => {

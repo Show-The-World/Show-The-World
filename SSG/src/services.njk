@@ -1,48 +1,43 @@
+
 ---
-    title: Websites For Small Businesses - Web Design By Show The World
+  title: Our Websites
 ---
 
 
 {% extends "boilerplate/base.njk" %}
 
-{% block links %}
-    <link rel="stylesheet" href="/styles/services.css">
-{% endblock %}
-
 
 {% block content %}
+
     <section class="subHero">
-        <h1 class="subHero-h1  subHero-highlight">Our Services</h1>
+        <h1 class="subHero-highlight">Our Services</h1>
     </section>
 
-  
 
 
-    <div class="styleBand">
-        <span class="styleBand-span">how The World Show The World Show The Wo</span>
-    </div>
+    {% include "layouts/styleBand.njk" %}
 
 
-    <section class="offers">
-        <div class="offers-card ">
+    <section class="offers --bg-main2 colorInverse --l-threeSplitCard">
+        <div class="card --outsetShadow">
             <h3 class="offers-h3">Copywriting</h3>
             <div class="offers-price">0</div>
             <p class="offers-p">Words that breathe life into your brand, conveying your message with purpose and power.</p>
-            <a href="./contact.html#form"class="a-button --b-1">Let's Get In Touch</a>
+            <a href="/contact.html#form"class="a-button --b-1">Let's Get In Touch</a>
         </div>
 
-        <div class="offers-card ">
+        <div class="card --outsetShadow">
             <h3 class="offers-h3">Graphic Design</h3>
             <div class="offers-price">0</div>
             <p class="offers-p">Complimentary designs tailored to your reasonable needs, making visuals speak volumes.</p>
-            <a href="./contact.html#form" class="a-button --b-1">Let's Get In Touch</a>
+            <a href="/contact.html#form" class="a-button --b-1">Let's Get In Touch</a>
         </div>
 
-        <div class="offers-card ">
+        <div class="card --outsetShadow">
             <h3 class="offers-h3">Hosting</h3>
             <div class="offers-price">30</div>
             <p class="offers-p">Reliable and lightning-fast hosting, ensuring your website is always open for business.</p>
-            <a href="./contact.html#form" class="a-button --b-1">Let's Get In Touch</a>
+            <a href="/contact.html#form" class="a-button --b-1">Let's Get In Touch</a>
         </div>
     </section>
 
@@ -230,6 +225,5 @@
         <p class="cta-p">Ready to make your mark online? Let's collaborate and bring your business to the digital forefront. Get started with Show the World today!</p>
         <div class="--b-big"><a href="./contact.html#form" class="a-button --b-1">Let's Get In Touch</a></div>
     </section>
+
 {% endblock %}
-
-

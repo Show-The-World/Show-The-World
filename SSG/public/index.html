@@ -3,100 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Design With SEO For Small Businesses</title>
+    
+    <title>Home</title>
     <meta name="description" content="Show the World Digital: Where websites aren't just tools, they're your business's secret weapon. Quick-loading, SEO-smart, and tailored for Canadian small businesses. Expect more than just a pretty page – we deliver results without the fluff.">
 
+
+    <!-- Style Imports -->
     <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/layouts.css">
     
-    <link rel="stylesheet" href="/styles/home.css">
+    
+    
 
 
-    <link rel="Preloads" as="font/otf" href="/assets/LEMONMILK-Regular.otf">
-    <link rel="Preloads" as="font/otf" href="/assets/LEMONMILK-Bold.otf">
-    <link rel="Preloads" as="font/otf" href="/assets/LEMONMILK-Light.otf">
-    <link rel="Preloads" as="font/woff2" href="/assets/open-sans-regular.woff2">
-    <link rel="Preloads" as="font/woff2" href="/assets/source-code-pro-regular.woff2">
 
+
+    <!-- Netlify Identity -->
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 
 
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-5QVEKYTDNS"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-5QVEKYTDNS');
-</script>
+
 
 <body>
     
-        <div class="hero-seperator"></div>
-<header>
-    <a class="logo" href="/">STW</a>
-
-    <label class="header-label" for="hamburger">
-        <div class="header-hamburger-button"></div>
-    </label>
-    <input type="checkbox" class="header-hamburger-checkbox" name="hamburger" id="hamburger">
-    <nav class="header-nav">
+        <header class="--bg-main2">
+    <a href="/" class="logoWrapper">LOGO</a>
+    
+    <input  type="checkbox" id="nav-toggle" name="nav-toggle" class="nav-toggle">
+    <nav>
         <ul>
-            <li><a class="header-button" href="/about">About</a></li>
-            <li><a class="header-button" href="/services">Services</a></li>
-            <li><a class="header-button" href="/blog">Blog</a></li>
-            <li><a class="header-button" href="/contact">Contact Us</a></li>
+            <li><a href="/" class="--btn-nav">Home</a></li>
+            <li><a href="/About" class="--btn-nav">About Us</a></li>
+            <li><a href="/services" class="--btn-nav">Our Websites</a></li>
+            <li><a href="/contact" class="--btn-nav">Contact</a></li>
+            <li><a href="/contact#quote" class="--btn-CTA2">Call To Action</a></li>
         </ul>
     </nav>
+
+    <label for="nav-toggle" class="nav-toggle-label"></label>
 </header>
     
 
 
     
-<div class="hero-seperator"></div>
-
-
-
     <section class="hero">
         <h1>Show The World</h1>
-    </section>
 
+        <div class="--l-twoSplitColumn">
+            <p class="--t-p-big">At Show the World, we're on a mission to empower small businesses. With our beautifully designed and SEO-optimized websites, we'll handle your website needs while you focus on what truly matters - growing your business.</p>
 
-
-    <section class="service --split2">
-        <p class="service-p">At Show the World, we're on a mission to empower small businesses. With our beautifully designed and SEO-optimized websites, we'll handle your website needs while you focus on what truly matters - growing your business.</p>
-
-        <div class="service-container">
-            <div class="service-subContainer">
-                <div class="service-subSubContainer">
-                    <img class="service-img" src="/assets/service-img.jpg" alt="">
+            <div class="service-container">
+                <div class="service-subContainer">
+                    <div class="service-subSubContainer">
+                        <img class="service-img" src="/assets/service-img.jpg" alt="">
+                    </div>
                 </div>
             </div>
         </div>
+
     </section>
 
 
-
-
-    <section class="beyond --spread">
-        <h2 class="beyond-h2">Beyond <span class="--t-sub">A Website</span></h2>
-        <div class="beyond-container">
-            <div class="beyond-subContainer">
-                <h3 class="beyond-h3">Tailored To Each Business</h3>
-                <p class="beyond-p">Picture this: a website that mirrors your brand's soul, not just slaps on a pretty face. Our goal is to, understand the essence of your business, then reflect it back in the design. It's like your brand's fingerprint – unique, unmistakable, unapologetically yours. We don't do cookie-cutter here; we craft digital reflections that resonate with your identity.</p>
+    <section class="--l-beyond colorInverse --spread-1">
+        <h2>Beyond <span class="--t-sub">A Website</span></h2>
+        <div class="container --bg-main2 --l-threeSplitColumn --insetShadow">
+            <div class="--spread-2">
+                <h3>Tailored To Each Business</h3>
+                <p>Picture this: a website that mirrors your brand's soul, not just slaps on a pretty face. Our goal is to, understand the essence of your business, then reflect it back in the design. It's like your brand's fingerprint – unique, unmistakable, unapologetically yours. We don't do cookie-cutter here; we craft digital reflections that resonate with your identity.</p>
             </div>
-            <div class="beyond-subContainer">
-                <h3 class="beyond-h3">Search Engine Optimized</h3>
-                <p class="beyond-p">Our websites are SEO savvy, not just in words but in action. They load with a snap, embracing accessibility standards like a pro. From color contrast to web reader friendliness, we've got it covered. And the content? It's like a magnet for keywords, drawing in the right crowd. We build websites that do more than just look good – they work smart.</p>
+            <div class="--spread-2">
+                <h3>Search Engine Optimized</h3>
+                <p>Our websites are SEO savvy, not just in words but in action. They load with a snap, embracing accessibility standards like a pro. From color contrast to web reader friendliness, we've got it covered. And the content? It's like a magnet for keywords, drawing in the right crowd. We build websites that do more than just look good – they work smart.</p>
             </div>
-            <div class="beyond-subContainer">
-                <h3 class="beyond-h3">Research Based Design</h3>
-                <p class="beyond-p">Our sites are built with a clear goal in mind. We carefully design and structure each page to not just attract visitors, but to encourage them to take action. It's about smart layout and intuitive design, guiding them towards requesting a quote or reaching out to you.</p>
+            <div class="--spread-2">
+                <h3>Research Based Design</h3>
+                <p>Our sites are built with a clear goal in mind. We carefully design and structure each page to not just attract visitors, but to encourage them to take action. It's about smart layout and intuitive design, guiding them towards requesting a quote or reaching out to you.</p>
             </div>
         </div>
-
     </section>
+
+
     <div class="beyond-imgContainer">
         <img loading="lazy" class="beyond-img" src="/assets/beyond.png" alt="">
     </div>
@@ -105,42 +94,38 @@
 
 
     <section class="ctaCard">
-        <h2 class="ctaCard-heading">Start<br>Your<br>Project</h2>
-        <a href="./contact.html#form" class="a-button --b-2">Let's Get In Touch</a>
+        <h2 class="h2-2">Start<br>Your<br>Project</h2>
+        <a href="/contact.html#form" class="a-button --b-2">Let's Get In Touch</a>
 
-        <div class="ctaCard-backText">
-            <div class="ctaCard-backLine1">Show The World Show The World Show The World</div>
-            <div class="ctaCard-backLine2">Show The World Show The World Show The World</div>
-            <div class="ctaCard-backLine3">Show The World Show The World Show The World</div>
+        <div class="container">
+            <div>Show The World Show The World Show The World</div>
+            <div>Show The World Show The World Show The World</div>
+            <div>Show The World Show The World Show The World</div>
         </div>
-    </section>
+</section>
 
 
 
 
-    <section class="ourProcess">
-        <h2 class="ourProcess-h2">Our Process</h2>
+    <section class="ourProcess colorInverse --spread-1">
+        <h2>Our Process</h2>
 
-        <div class="ourProcess-container">
-            <div class="ourProcess-card --spread">
-                <img loading="lazy" src="/assets/process-1.svg" alt="" class="ourProcess-icon">
-                <h3 class="process-h3">Consult</h3>
-                <!-- <a href="" class="--b-learnMore a-button">Learn More</a> -->
+        <div class="container">
+            <div class="card">
+                <img loading="lazy" src="/assets/process-1.svg" alt="">
+                <h3 class="h3-2">Consult</h3>
             </div>
-            <div class="ourProcess-card --spread">
-                <img loading="lazy" src="/assets/process-2.svg" alt="" class="ourProcess-icon">
-                <h3 class="process-h3">Design</h3>
-                <!-- <a href="" class="--b-learnMore a-button">Learn More</a> -->
+            <div class="card">
+                <img loading="lazy" src="/assets/process-2.svg" alt="">
+                <h3 class="h3-2">Design</h3>
             </div>
-            <div class="ourProcess-card --spread">
-                <img loading="lazy" src="/assets/process-3.svg" alt="" class="ourProcess-icon">
-                <h3 class="process-h3">Code</h3>
-                <!-- <a href="" class="--b-learnMore a-button">Learn More</a> -->
+            <div class="card">
+                <img loading="lazy" src="/assets/process-3.svg" alt="">
+                <h3 class="h3-2">Code</h3>
             </div>
-            <div class="ourProcess-card --spread">
-                <img loading="lazy" src="/assets/process-4.svg" alt="" class="ourProcess-icon">
-                <h3 class="process-h3">Deploy</h3>
-                <!-- <a href="" class="--b-learnMore a-button">Learn More</a> -->
+            <div class="card">
+                <img loading="lazy" src="/assets/process-4.svg" alt="">
+                <h3 class="h3-2">Deploy</h3>
             </div>
         </div>
     </section>
@@ -148,115 +133,89 @@
     
 
 
-    <article class="what bg-wrapper">
-        <h2 class="what-h2">What Makes Us So Good?</h2>
+    <section class="what --bg-blueprint">
+        <h2>What Makes Us So Good?</h2>
 
-        <section class="what-container what-right">
+        <div class="container container-right">
             <img loading="lazy" src="/assets/what-4.svg" alt="" class="what-img">
 
-            <div class="what-subContainer">
-                <h3 class="what-h3" >On-Page SEO</h3>
+            <div class="subContainer --spread-1">
+                <h3 >On-Page SEO</h3>
                 <p>Think of Google as that picky eater; it's hard to please but not with us on your side. Our on-page SEO isn't just about throwing in keywords and hoping for the best. We delve deep into optimized content and keyword research, aligning with Google's Core Vitals. It's like giving Google exactly what it craves, making your competitors eat your digital dust.</p>
                 <a href="./services.html#seo" class="--b-learnMore a-button">Learn More</a>
             </div>
-        </section>
+        </div>
 
 
-        <section class="what-container what-left">
+        <div class="container container-left">
             <img loading="lazy" src="/assets/what-3.svg" alt="" class="what-img">
 
-            <div class="what-subContainer">
-                <h3 class="what-h3" >Our Designs</h3>
+            <div class="subContainer --spread-1">
+                <h3 >Our Designs</h3>
                 <p>Your business isn't just another name in the market; it's a unique story waiting to be told. At Show the World, we don't just design websites; we craft digital identities. With our redesign options, we ensure your website isn't just a digital footprint but a mirror of your brand's soul. We tweak and twist until every pixel screams 'you'.</p>
                 <a href="./services.html#design" class="--b-learnMore a-button">Learn More</a>
             </div>
-        </section>
+        </div>
 
-        <section class="what-container what-right">
+        <div class="container container-right">
             <img loading="lazy" src="/assets/what-5.svg" alt="" class="what-img">
 
-            <div class="what-subContainer">
-                <h3 class="what-h3" >Fast Load Speeds</h3>
+            <div class="subContainer --spread-1">
+                <h3 >Fast Load Speeds</h3>
                 <p>In the digital race, speed is king, and we're the ace up your sleeve. Our websites don't just load; they sprint, especially on mobile. With a guaranteed 95+/100 on Google's Core Vitals, we ensure your visitors stay, browse, and don't bounce all while appealing to google's speed preferences. Fast load times? More like lightning strikes.</p>
             </div>
-        </section>
+        </div>
 
-        <section class="what-container what-left">
+        <div class="container container-left">
             <img loading="lazy" src="/assets/what-2.svg" alt="" class="what-img">
 
-            <div class="what-subContainer">
-                <h3 class="what-h3" >Sales Based Layout</h3>
+            <div class="subContainer --spread-1">
+                <h3 >Sales Based Layout</h3>
                 <p>Every click on your website should be a step towards a sale. We don't just build websites; we construct digital sales funnels. Our strategic design ensures that every visitor is on a journey from 'just browsing' to 'shut up and take my money'.</p>
-                <!-- <a href="" class="--b-learnMore a-button">Learn More</a> -->
             </div>
-        </section>
+        </div>
 
-        <section class="what-container what-right">
+        <div class="container container-right">
             <img loading="lazy" src="/assets/what-1.svg" alt="" class="what-img">
 
-            <div class="what-subContainer">
-                <h3 class="what-h3" >Responsive Design</h3>
+            <div class="subContainer --spread-1">
+                <h3 >Responsive Design</h3>
                 <p>In a world where screens come in all shapes and sizes, your website needs to be a digital chameleon. Our responsive design ensures your site looks stunning on every device, adapting with grace and style. We use cutting-edge techniques, ensuring compatibility across a multitude of browsers. It's not just responsive; it's responsibly brilliant.</p>
                 <a href="./services.html#access" class="--b-learnMore a-button">Learn More</a>
             </div>
-        </section>
+        </div>
 
-        <section class="what-container what-left">
+        <div class="container container-left">
             <img loading="lazy" src="/assets/what-6.svg" alt="" class="what-img">
 
-            <div class="what-subContainer">
-                <h3 class="what-h3" >Accessible Design</h3>
+            <div class="subContainer --spread-1">
+                <h3 >Accessible Design</h3>
                 <p>We believe the digital world should be accessible to all, and our designs reflect that belief. Our websites are optimized for screen readers, and we adhere to WGAC's recommended practices, including color contrast. It's not just about building websites; it's about building bridges to inclusivity.</p>
                 <a href="./services.html#access" class="--b-learnMore a-button">Learn More</a>
             </div>
-        </section>
+        </div>
 
-    <h3 class="what-footNote"><span class="--t-whatSub">But You Don't Need To Worry About Any Of That,</span><br>Leave It To Us</h3>
-    </article>
-
-
+        <div class="footNote"><span class="--t-sub">But You Don't Need To Worry About Any Of That,</span><br>Leave It To Us</div>
+    </section>
 
 
-    <section class="cta --spread">
-        <h2 class="cta-h2"><span class="cta-h2First">Let's</span> Work <span class="cta-h2Last">Together</span></h2>
-        <p class="cta-p">Ready to make your mark online? Let's collaborate and bring your business to the digital forefront. Get started with Show the World today!</p>
+
+    <section class="cta colorInverse">
+        <h2 class="h2-3"><span class="h2First">Let's</span> Work <span class="h2Last">Together</span></h2>
+        <p>Ready to make your mark online? Let's collaborate and bring your business to the digital forefront. Get started with Show the World today!</p>
         <div class="--b-big"><a href="./contact.html#form" class="a-button --b-1">Let's Get In Touch</a></div>
     </section>    
+    
 
 
 
     
         <footer>
-    <div class="footer-container footer-1">
-        <div class="footer-subContainer">
-            <a class="logo logo-footer" href="/">STW</a>
-            <h4 class="footer-h4">Show The World Digital</h4>
-        </div>
-
-        <div class="footer-subContainer footer-3">
-            <h4 class="footer-h4">Look Around</h4>
-            <nav class="footer-nav">
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/about">About Us</a></li>
-                    <li><a href="/services">Our Services</a></li>
-                    <li><a href="/blog">Our Blog</a></li>
-                    <li><a href="/contact">Contact Us</a></li>
-                </ul>
-            </nav>
-        </div>
-
-        <div class="footer-subContainer">
-            <!-- <h4 class="footer-h4">A Little About Us</h4> -->
-            <p class="footer-p">Show the World Digital: Where websites aren't just tools, they're your business's secret weapon. Quick-loading, SEO-smart, and tailored for Canadian small businesses. Expect more than just a pretty page – we deliver results without the fluff.</p>
-        </div>
-    </div>
-    <div class="footer-seperator"></div>
-    <small class="footer-small">Copyright 2023 Show The World. All rights reserved.</small>
 </footer>
     
 
-    
+
+    <!-- Netlify Identity -->
     <script>
     if (window.netlifyIdentity) {
         window.netlifyIdentity.on("init", user => {
@@ -268,6 +227,5 @@
         });
     }
     </script>
-
 </body>
 </html>

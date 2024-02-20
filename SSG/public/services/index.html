@@ -3,89 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Websites For Small Businesses - Web Design By Show The World</title>
+    
+    <title></title>
     <meta name="description" content="Show the World Digital: Where websites aren't just tools, they're your business's secret weapon. Quick-loading, SEO-smart, and tailored for Canadian small businesses. Expect more than just a pretty page – we deliver results without the fluff.">
 
+
+    <!-- Style Imports -->
     <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/layouts.css">
     
-    <link rel="stylesheet" href="/styles/services.css">
+    
+    
 
 
-    <link rel="Preloads" as="font/otf" href="/assets/LEMONMILK-Regular.otf">
-    <link rel="Preloads" as="font/otf" href="/assets/LEMONMILK-Bold.otf">
-    <link rel="Preloads" as="font/otf" href="/assets/LEMONMILK-Light.otf">
-    <link rel="Preloads" as="font/woff2" href="/assets/open-sans-regular.woff2">
-    <link rel="Preloads" as="font/woff2" href="/assets/source-code-pro-regular.woff2">
 
+
+    <!-- Netlify Identity -->
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 
 
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-5QVEKYTDNS"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-5QVEKYTDNS');
-</script>
+
 
 <body>
     
-        <div class="hero-seperator"></div>
-<header>
-    <a class="logo" href="/">STW</a>
-
-    <label class="header-label" for="hamburger">
-        <div class="header-hamburger-button"></div>
-    </label>
-    <input type="checkbox" class="header-hamburger-checkbox" name="hamburger" id="hamburger">
-    <nav class="header-nav">
+        <header class="--bg-main2">
+    <a href="/" class="logoWrapper">LOGO</a>
+    
+    <input  type="checkbox" id="nav-toggle" name="nav-toggle" class="nav-toggle">
+    <nav>
         <ul>
-            <li><a class="header-button" href="/about">About</a></li>
-            <li><a class="header-button" href="/services">Services</a></li>
-            <li><a class="header-button" href="/blog">Blog</a></li>
-            <li><a class="header-button" href="/contact">Contact Us</a></li>
+            <li><a href="/" class="--btn-nav">Home</a></li>
+            <li><a href="/About" class="--btn-nav">About Us</a></li>
+            <li><a href="/services" class="--btn-nav">Our Websites</a></li>
+            <li><a href="/contact" class="--btn-nav">Contact</a></li>
+            <li><a href="/contact#quote" class="--btn-CTA2">Call To Action</a></li>
         </ul>
     </nav>
+
+    <label for="nav-toggle" class="nav-toggle-label"></label>
 </header>
     
 
 
     
+
     <section class="subHero">
-        <h1 class="subHero-h1  subHero-highlight">Our Services</h1>
+        <h1 class="subHero-highlight">Our Services</h1>
     </section>
 
-  
 
 
     <div class="styleBand">
         <span class="styleBand-span">how The World Show The World Show The Wo</span>
-    </div>
+</div>
 
 
-    <section class="offers">
-        <div class="offers-card ">
+    <section class="offers --bg-main2 colorInverse --l-threeSplitCard">
+        <div class="card --outsetShadow">
             <h3 class="offers-h3">Copywriting</h3>
             <div class="offers-price">0</div>
             <p class="offers-p">Words that breathe life into your brand, conveying your message with purpose and power.</p>
-            <a href="./contact.html#form"class="a-button --b-1">Let's Get In Touch</a>
+            <a href="/contact.html#form"class="a-button --b-1">Let's Get In Touch</a>
         </div>
 
-        <div class="offers-card ">
+        <div class="card --outsetShadow">
             <h3 class="offers-h3">Graphic Design</h3>
             <div class="offers-price">0</div>
             <p class="offers-p">Complimentary designs tailored to your reasonable needs, making visuals speak volumes.</p>
-            <a href="./contact.html#form" class="a-button --b-1">Let's Get In Touch</a>
+            <a href="/contact.html#form" class="a-button --b-1">Let's Get In Touch</a>
         </div>
 
-        <div class="offers-card ">
+        <div class="card --outsetShadow">
             <h3 class="offers-h3">Hosting</h3>
             <div class="offers-price">30</div>
             <p class="offers-p">Reliable and lightning-fast hosting, ensuring your website is always open for business.</p>
-            <a href="./contact.html#form" class="a-button --b-1">Let's Get In Touch</a>
+            <a href="/contact.html#form" class="a-button --b-1">Let's Get In Touch</a>
         </div>
     </section>
 
@@ -276,37 +271,24 @@
 
 
 
+
     
         <footer>
-    <div class="footer-container footer-1">
-        <div class="footer-subContainer">
-            <a class="logo logo-footer" href="/">STW</a>
-            <h4 class="footer-h4">Show The World Digital</h4>
-        </div>
-
-        <div class="footer-subContainer footer-3">
-            <h4 class="footer-h4">Look Around</h4>
-            <nav class="footer-nav">
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/about">About Us</a></li>
-                    <li><a href="/services">Our Services</a></li>
-                    <li><a href="/blog">Our Blog</a></li>
-                    <li><a href="/contact">Contact Us</a></li>
-                </ul>
-            </nav>
-        </div>
-
-        <div class="footer-subContainer">
-            <!-- <h4 class="footer-h4">A Little About Us</h4> -->
-            <p class="footer-p">Show the World Digital: Where websites aren't just tools, they're your business's secret weapon. Quick-loading, SEO-smart, and tailored for Canadian small businesses. Expect more than just a pretty page – we deliver results without the fluff.</p>
-        </div>
-    </div>
-    <div class="footer-seperator"></div>
-    <small class="footer-small">Copyright 2023 Show The World. All rights reserved.</small>
 </footer>
     
 
-    
+
+    <!-- Netlify Identity -->
+    <script>
+    if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+        if (!user) {
+            window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+            });
+        }
+        });
+    }
+    </script>
 </body>
 </html>
