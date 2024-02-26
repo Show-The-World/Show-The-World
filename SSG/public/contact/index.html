@@ -29,30 +29,96 @@
 <body>
     
         <header class="--bg-main2">
-    <a href="/" class="logoWrapper">LOGO</a>
+    <a href="/" class="logoWrapper logo">STW</a>
     
     <input  type="checkbox" id="nav-toggle" name="nav-toggle" class="nav-toggle">
     <nav>
         <ul>
             <li><a href="/" class="--btn-nav">Home</a></li>
-            <li><a href="/About" class="--btn-nav">About Us</a></li>
+            <li><a href="/about" class="--btn-nav">About Us</a></li>
             <li><a href="/services" class="--btn-nav">Our Websites</a></li>
             <li><a href="/contact" class="--btn-nav">Contact</a></li>
-            <li><a href="/contact#quote" class="--btn-CTA2">Call To Action</a></li>
         </ul>
     </nav>
 
-    <label for="nav-toggle" class="nav-toggle-label"></label>
+    <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
 </header>
     
 
 
     
+    <section class="subHero">
+        <h1 class="subHero-h1  subHero-highlight">Contact Us</h1>
+    </section>
+
+
+    <section class="form" id="form">
+        <h2 class="colorInverse">Let's Start Talking</h2>
+        <div class="container">
+            <div class="subContainer --spread-2">
+                <h3>Contact Info</h3>
+                <p class="form-p">Reach out to us through our contact form. Alternatively, you can use the provided contact information to get in touch.</p>
+                <a class="form-a form-phone" href="tel:+5149463014">514 - 946 - 3014</a>
+                <a class="form-a form-mail" href="mailto:a.william.20047@gmail.com">info@showtheworld.digital</a>
+                <a class="form-a form-web" href="https://showtheworld.digital">showtheworld.digital</a>
+            </div>
+            <form name="contact" method="POST" data-netlify="true">
+                <div class="form-subContainer">
+                    <input class='form-input' placeholder=" " type="text" id="name" required name="name">
+                    <label class='form-label' for="name">Name</label>
+                </div>
+                <div class="form-subContainer">
+                    <input class='form-input' placeholder=" " type="tel" id="phone" required name="phone">
+                    <label class='form-label' for="phone">Phone</label>
+                </div>
+                <div class="form-subContainer">
+                    <input class='form-input' placeholder=" " type="email" id="email" required name="email">
+                    <label class='form-label' for="email">Email</label>
+                </div>
+                <div class="form-subContainer">
+                    <textarea placeholder=" " id="message" required name="message"></textarea>
+                    <label class='form-label' for="message">Message</label>
+                </div>
+
+                <button class="a-button --b-1" type="submit">Send</button>
+            </form>
+        </div>
+    </section>
 
 
 
     
-        <footer>
+        <footer class="colorInverse">
+    <div class="footer-container footer-1">
+        <div class="footer-subContainer">
+            <a class="logo logo-footer colorMain" href="/">STW</a>
+            <h4 class="footer-h4">Show The World Digital</h4>
+        </div>
+
+        <div class="footer-subContainer footer-3 --spread-1">
+            <h4 class="footer-h4">Look Around</h4>
+            <nav class="footer-nav">
+                <ul class="--spread-1">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About Us</a></li>
+                    <li><a href="/services">Our Services</a></li>
+                    <li><a href="/blog">Our Blog</a></li>
+                    <li><a href="/contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="footer-subContainer --spread-1">
+            <h4 class="footer-h4">A Little About Us</h4>
+            <p class="footer-p">Show the World Digital: Where websites aren't just tools, they're your business's secret weapon. Quick-loading, SEO-smart, and tailored for Canadian small businesses. Expect more than just a pretty page – we deliver results without the fluff.</p>
+        </div>
+    </div>
+    <div class="footer-seperator"></div>
+    <small class="footer-small">Copyright 2023 Show The World. All rights reserved.</small>
 </footer>
     
 

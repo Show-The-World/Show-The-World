@@ -24,7 +24,7 @@
 /****************************************************************************/
 
 :root{
-    --size-headerHeight: 80px;
+    --size-headerHeight: calc((60 /16 * 1rem) + ((80 - 60) * ((100vw - 320px) / (1920 - 320))));
     --size-spacing1: calc((20 /16 * 1rem) + ((40 - 20) * ((100vw - 320px) / (1920 - 320))));
     --size-gutterSpacing: calc((15 /16 * 1rem) + ((150 - 15) * ((100vw - 320px) / (1920 - 320))));
     --size-sectionMargin: calc((150 /16 * 1rem) + ((340 - 150) * ((100vw - 320px) / (1920 - 320))));
@@ -43,12 +43,13 @@
 /********************************* COLORS ************************************/
 /*****************************************************************************/
 
-:root{
+:root, .colorMain{
     --c-dark: #2c3033;
     --c-dark2: #363a3c;
     --c-light: #fefaf9;
     --c-light2: #f5f1f0;
     --c-accent: #e56969;
+    --c-accent2: #fd7979;
 }
 
 .colorInverse{
@@ -76,7 +77,7 @@ body{
 }
 
 
-header, footer{
+header{
     padding: 0 var(--size-gutterSpacing);
 }
 
@@ -84,7 +85,9 @@ section, main, article{
     padding: calc(var(--size-sectionMargin) / 2) var(--size-gutterSpacing);
 }
 
-
+footer{
+    padding: calc(var(--size-sectionMargin) /4) var(--size-gutterSpacing);
+}
 
 button, a{
     display: block;
@@ -104,8 +107,122 @@ img{
 /********************************* BUTTONS ************************************/
 /******************************************************************************/
 
+button, a{
+    cursor: pointer;
 
+    display: block;
+    width: max-content;
+    height: min-content;
 
+    text-align: center;
+
+    /* Padding Sizes */
+}
+
+/* Custom Button Stylings */
+a, button{
+    transition: all 0.2s;
+}
+.--b-1{
+    color: var(--c-light);
+    background-color: var(--c-dark);
+    font-family: lemonMilk-light;
+    padding: 0.7em;
+    border-radius: calc((2 /16 * 1rem) + ((4 - 2) * ((100vw - 320px) / (1920 - 320))));
+    font-weight: 100;
+    font-size: calc((18 /16 * 1rem) + ((28 - 18) * ((100vw - 320px) / (1920 - 320))));
+    border-style: solid;
+    border-width: calc((1 /16 * 1rem) + ((2 - 1) * ((100vw - 320px) / (1920 - 320))));
+
+}
+.--b-1:hover{
+    background-color: var(--c-light);
+    color: var(--c-dark);
+}
+
+/* .--b-3{
+    color: var(--c-accent);
+}
+.--b-3:hover{
+    background-color: var(--c-accent);
+    color: var(--c-dark);
+}
+.--b-4{
+    background-color: var(--c-offLight);
+    color:var(--c-dark);
+}
+.--b-4:hover{
+    background-color: var(--c-offDark);
+    color: var(--c-light);
+} */
+.--b-big{
+    position: relative;
+    z-index: 2;
+    width: min-content;
+}
+.--b-big a{
+    transition: all 0.2s cubic-bezier(0.21, 1.26, 0.61, 1.38);
+}
+.--b-big .--b-1{
+    box-shadow: 0px 10px 0px 0px var(--c-light);
+}
+.--b-big .--b-1:hover{
+    color: var(--c-light);
+    background-color: var(--c-dark);
+    transform: translateY(6px);
+}
+.--b-big::after{
+    position: absolute;
+    content: '';
+    z-index: -2;
+
+    --padding: -9px;
+    top: calc(17% + var(--padding));
+    bottom: calc(-17% + var(--padding));
+    right: var(--padding);
+    left: var(--padding);
+
+    border-radius: calc((2 /16 * 1rem) + ((4 - 2) * ((100vw - 320px) / (1920 - 320))));
+    border-style: solid;
+    border-width: 7px;
+    border-color: var(--c-light);
+}
+
+.--b-learnMore{
+    color: var(--c-light);
+    border-style: none;
+    font-family: openSans;    
+    font-size: calc((15 /16 * 1rem) + ((25 - 15) * ((100vw - 320px) / (1920 - 320))));
+    font-weight: 600;
+    text-decoration: underline;
+    padding: 0;
+    background: none;
+}
+.--b-learnMore:hover{
+    color: var(--c-accent);
+}
+
+.--btn-nav::before{
+    content: '< ';
+}
+.--btn-nav::after{
+    content: ' >';
+}
+
+.--btn-nav{
+    font-family: sourceCode;
+    font-size: calc((16 /16 * 1rem) + ((24 - 16) * ((100vw - 320px) / (1920 - 320))));
+    color: var(--c-light);
+
+    border: none;
+    background: none;
+}
+
+.--btn-nav:hover{
+    color: var(--c-accent);
+    font-weight: 1000;
+    transform: translateY(1px);
+}
 
 /*****************************************************************************/
 /******************************* TYPOGRAPHY **********************************/
@@ -155,7 +272,12 @@ img{
 
 p, li{
     font-family: openSans;
-    font-size: calc((18 /16 * 1rem) + ((22 - 18) * ((100vw - 320px) / (1920 - 320))));
+    font-size: calc((16 /16 * 1rem) + ((22 - 16) * ((100vw - 320px) / (1920 - 320))));
+}
+
+.--t-pBig{
+    background-color: var(--c-dark);
+    font-size: calc((20 /16 * 1rem) + ((40 - 20) * ((100vw - 320px) / (1920 - 320))));
 }
 
 h2, h2 >*{
@@ -190,11 +312,12 @@ h3{
     font-size: calc((20 /16 * 1rem) + ((30 - 20) * ((100vw - 320px) / (1920 - 320))));
 
 }
-.h3-2{
+.h3-2, .h3-2 >{
     font-family: sourceCode;
     font-weight: 500;
     font-size: calc((30 /16 * 1rem) + ((50 - 30) * ((100vw - 320px) / (1920 - 320))));
 }
+
 
 
 h1{
@@ -209,16 +332,23 @@ h1{
 /*****************************************************************************/
 
 
+
+
+.--outsetShadow{
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 0px 12px -4px rgba(0,0,0,0.4); 
+    box-shadow: 0px 0px 12px -4px rgba(0,0,0,0.4);
+}
 .--insetShadow{
     border-radius: 20px;
     -webkit-box-shadow: inset 0px 0px 10px 1px #000000; 
     box-shadow: inset 0px 0px 10px 1px #000000;
 }
 
-.--outsetShadow{
+.--insetShadow2{
     border-radius: 20px;
-    -webkit-box-shadow: 0px 0px 12px -4px rgba(0,0,0,0.4); 
-    box-shadow: 0px 0px 12px -4px rgba(0,0,0,0.4);
+    -webkit-box-shadow: inset 0px 0px 12px -4px rgba(0,0,0,0.4); 
+    box-shadow: inset 0px 0px 12px -4px rgba(0,0,0,0.4);
 }
 
 .--bg-main2{
@@ -244,7 +374,9 @@ h1{
 .--spread-3 > *:not(:last-child){
     margin-bottom: 2em;
 }
-
+.--spread-even > *:not(:last-child){
+    margin-bottom: calc(var(--size-spacing1) / 2);
+}
 
 
 
@@ -260,4 +392,49 @@ h1{
     font-style: italic;
     transform: translateX(100px);
     user-select: none;
+}
+
+
+
+
+.logo{
+    display: inline-block;
+    
+    z-index: 0;
+    color: var(--c-accent);
+    position: relative;
+    --offset: 4px;
+
+    transition: all 0.3s cubic-bezier(0.21, 0.58, 0, 2.76);
+}
+.logo::before, .logo::after, .logo{
+    font-size: calc((25 /16 * 1rem) + ((50 - 25) * ((100vw - 320px) / (1920 - 320))));
+    font-family: lemonMilk-bold;
+    font-style: italic;
+}
+.logo::before, .logo::after{
+    content: "STW";
+    color: var(--c-light);
+    position: absolute;
+}
+.logo::before{
+    z-index: -1;
+    top: var(--offset);
+    left: var(--offset);
+}
+.logo::after{
+    z-index: 1;
+    bottom: var(--offset);
+    right: var(--offset);
+}
+
+.logo-footer::before, .logo-footer::after{
+    color: var(--c-dark);
+}
+.logo-footer::before, .logo-footer::after, .logo-footer{
+    font-size: calc((100 /16 * 1rem) + ((150 - 100) * ((100vw - 320px) / (1920 - 320))));
+}
+
+.logo:hover{
+    transform: scale(1.1);
 }
