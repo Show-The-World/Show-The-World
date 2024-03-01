@@ -1,0 +1,25 @@
+---
+title: Portfolio
+portfolio:
+  - link: https://showtheworld.digital
+    darkColor: black
+    lightColor: grey
+    imageName: p1.jpg
+
+---
+{% extends "boilerplate/base.njk" %}
+
+
+{% block content %}
+    <section class="subHero">
+        <h1 class="subHero-highlight">Our Portfolio</h1>
+    </section>
+
+    <section class="--layout-portfolio colorInverse">
+        {% for website in portfolio %}
+        <a href={{website.link}} class="--card-portfolio" style="--darkColor: {{website.darkColor}}; --lightColor: {{website.lightColor}};">
+            <div class="imgWrapper"><img src="/assets/portfolio/{{website.imageName}}"></div>
+        </a>
+        {% endfor %}
+    </section>
+{% endblock %}
