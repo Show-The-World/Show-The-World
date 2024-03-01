@@ -210,7 +210,7 @@ a, button{
 
 .--btn-nav{
     font-family: sourceCode;
-    font-size: calc((16 /16 * 1rem) + ((24 - 16) * ((100vw - 320px) / (1920 - 320))));
+    font-size: calc((16 /16 * 1rem) + ((20 - 16) * ((100vw - 320px) / (1920 - 320))));
     color: var(--c-light);
 
     border: none;

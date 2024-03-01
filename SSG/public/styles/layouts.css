@@ -41,7 +41,7 @@ header .logoWrapper {
     display: none;
 }
 
-@media screen and (max-width:920px) {
+@media screen and (max-width:1025px) {
     header .logoWrapper {
         display: none;
     }
@@ -51,7 +51,7 @@ header .logoWrapper {
     }
 }
 
-@media screen and (max-width:750px) {
+@media screen and (max-width:950px) {
     header .logoWrapper {
         display: block;
     }
