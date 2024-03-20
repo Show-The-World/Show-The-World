@@ -291,9 +291,16 @@ h2, h2 >*{
     font-weight: 900;
     line-height: 0.9;
 }
-.h2-3, .h2-3 > *{
+.h2-3, .h2-3 > *, .h2-3-before::before{
     font-weight: 500;
     font-family: sourceCode;
+}
+.h2-4{
+    font-size: calc((32 /16 * 1rem) + ((64 - 32) * ((100vw - 320px) / (1920 - 320))));
+}
+
+.h2-5{
+    font-size: calc((32 /16 * 1rem) + ((76 - 32) * ((100vw - 320px) / (1920 - 320))));
 }
 
 
@@ -304,6 +311,10 @@ h2, h2 >*{
     .--t-sub{
         font-size: 0.5em;
     }
+}
+.--t-sub2{
+    font-size: 0.5em;
+    color: var(--c-accent);
 }
 
 h3{
