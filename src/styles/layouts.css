@@ -458,6 +458,11 @@ header .logoWrapper {
     padding: 0 var(--size-gutterSpacing);
 
     height: min-content;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--size-spacing1);
+    
 }
 .hero p{
     text-align: justify;
