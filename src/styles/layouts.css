@@ -1407,5 +1407,5 @@ textarea:not(:placeholder-shown)~.form-label {
     padding-right: calc(var(--size-gutterSpacing) * 2);
 }
 .bio img{
-    width: 80%;
+    width: calc((250 /16 * 1rem) + ((400 - 250) * ((100vw - 320px) / (1920 - 320))));
 }
